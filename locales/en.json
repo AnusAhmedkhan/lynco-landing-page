@@ -1,0 +1,494 @@
+{
+  "signin": {
+    "signin": "Sign In",
+    "welcome": "Welcome!",
+    "signup": "Create your account",
+    "forgotPassword": "Forgot Password?",
+    "description": "Welcome back! Sign in to continue your journey with our amazing features.",
+    "dontHaveAccount": "Don't have an account?",
+    "signUpLink": "Sign up",
+    "keepLoggedIn": "Keep me logged in"
+  },
+  "signup": {
+    "signup": "Create your account",
+    "getStarted": "Get Started!",
+    "signin": "Sign In",
+    "description": "Sign up to get started with our amazing features! Just fill in your details to create your account.",
+    "alreadyHaveAccount": "Already have an account?",
+    "signInLink": "Sign in"
+  },
+  "forgotPassword": {
+    "forgotPassword": "Forgot Password",
+    "description": "Enter your email to reset your password",
+    "sendCode": "Get Code",
+    "signin": "Sign In"
+  },
+  "resetPassword": {
+    "resetPassword": "Reset Password",
+    "description": "Enter your new password to complete the reset process",
+    "reset": "Change Password",
+    "success": {
+      "imageAlt": "Success",
+      "heading": "Your Password Successfully Changed",
+      "description": "Sign in to your account with your new password",
+      "signInButton": "Sign In"
+    }
+  },
+  "otp": {
+    "verifyIdentity": "OTP Verification",
+    "description": "Check your email to see the verification code",
+    "enterOTP": "Enter OTP",
+    "verify": "Verify",
+    "receiveOTP": "Didn't receive an OTP yet?",
+    "resend": "Resend now",
+    "otpSuccess": "OTP verified successfully"
+  },
+  "form": {
+    "email": {
+      "label": "Email Address",
+      "placeholder": "Email*"
+    },
+    "name": {
+      "placeholder": "Your Full Name*"
+    },
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "passwordPlaceholder": "Password*",
+    "confirmPasswordPlaceholder": "Confirm Password*",
+    "currentPassword": {
+      "label": "Current Password",
+      "placeholder": "Current Password*"
+    },
+    "phone": {
+      "label": "Phone Number",
+      "placeholder": "Phone*"
+    },
+    "company": {
+      "label": "Company",
+      "placeholder": "Company"
+    },
+    "designation": {
+      "label": "Designation",
+      "placeholder": "Designation"
+    },
+    "address": {
+      "label": "Address",
+      "placeholder": "Address*"
+    }
+  },
+  "sidebar": {
+    "logout": "Log Out",
+    "logoutModal": "Log Out?",
+    "logoutModalDescription": "You will be signed out of your account and redirected to the login page."
+  },
+  "header": {
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  },
+  "profile": {
+    "title": "Profile",
+    "accountSettings": "Account Settings",
+    "role": "Freelance Web Development Agreement",
+    "fields": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "company": "Company",
+      "location": "Location",
+      "phone": "Phone",
+      "designation": "Designation"
+    }
+  },
+  "accountSettings": {
+    "title": "Account Setting",
+    "buttons": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "updatePassword": "Update Password"
+    },
+    "navigation": {
+      "profile": "Profile",
+      "changePassword": "Change Password",
+      "notificationPreferences": "Notification Preferences"
+    },
+    "profile": {
+      "title": "Profile",
+      "updateSuccess": "Profile updated successfully",
+      "fields": {
+        "fullName": "Your Full Name",
+        "email": "Email",
+        "contactNo": "Contact No.",
+        "company": "Company",
+        "designation": "Designation",
+        "address": "Address/Location"
+      }
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "updateSuccess": "Password changed successfully",
+      "fields": {
+        "currentPassword": "Current Password",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password"
+      },
+      "placeholders": {
+        "currentPassword": "Enter your current password",
+        "newPassword": "Enter your new password",
+        "confirmPassword": "Confirm your new password"
+      },
+      "securityNote": {
+        "title": "Security Notice",
+        "description": "When you update your password, all active sessions will be logged out and you will need to sign in again."
+      }
+    },
+    "notifications": {
+      "title": "Notification Preferences",
+      "updateSuccess": "Notification preferences updated successfully",
+      "emailUpdates": {
+        "title": "Email Updates",
+        "description": "Receive important updates about your account and services"
+      },
+      "marketingEmails": {
+        "title": "Marketing Emails",
+        "description": "Receive promotional content and special offers"
+      }
+    },
+    "deleteAccount": {
+      "title": "Delete Account",
+      "description": "Permanently delete your account and all associated data. This action cannot be undone.",
+      "button": "Delete Account",
+      "deleteSuccess": "Account deleted successfully",
+      "modal": {
+        "title": "Delete Account",
+        "description": "Are you sure you want to delete your account? This action cannot be undone and will permanently delete all your data, including your profile, settings, and any associated content.",
+        "confirm": "Yes, Delete Account",
+        "cancel": "Cancel"
+      }
+    }
+  },
+  "dashboard": {
+    "header": {
+      "welcome": "Welcome back, {{name}}!",
+      "ready": "Ready to explore"
+    },
+    "menu": {
+      "profile": "Profile Settings",
+      "profileSettings": "Profile Settings",
+      "accountSettings": "Account Settings",
+      "logout": "Logout"
+    },
+    "notifications": "Notifications",
+    "defaults": {
+      "user": "User",
+      "userEmail": "user@example.com",
+      "notSpecified": "Not specified"
+    }
+  },
+  "common": {
+    "or": "or",
+    "continueWithGoogle": "Continue with Google",
+    "continue": "Continue",
+    "goBack": "Back",
+    "somethingWentWrong": "Something went wrong",
+    "seconds": "seconds",
+    "minute": "minute",
+    "pleaseWait": "Please Wait...",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "failedToLoadPricingPlans": "Failed to load pricing plans"
+  },
+  "auth": {
+    "continueJourney": "Continue Your Legal Journey",
+    "loginDescription": "Log in to pick up right where you left off, your contracts are safe and ready.",
+    "logoAlt": "Snaplegal Logo",
+    "signupSuccess": "Account created successfully! Please sign in to continue.",
+    "loginSuccess": "Welcome back! You have been signed in successfully."
+  },
+  "validationErrors": {
+    "invalidEmail": "*Please enter a valid email address",
+    "lowerCase": "*Password must contain at least one lowercase letter",
+    "upperCase": "*Password must contain at least one uppercase letter",
+    "number": "*Password must contain at least one number",
+    "specialChar": "*Password must contain at least one special character",
+    "minimumLength": "*Minimum length is {{minimumLength}} characters",
+    "maximumLength": "*Maximum length is {{maximumLength}} characters",
+    "minimumValue": "*Minimum value is {{minimumValue}}",
+    "maximumValue": "*Maximum value is {{maximumValue}}",
+    "invalidOption": "*Invalid option",
+    "invalidFormat": "*Invalid format",
+    "passwordsMustMatch": "*Passwords must match",
+    "required": "This field is required"
+  },
+  "validation": {
+    "name": {
+      "required": "Name is required",
+      "minLength": "Name must be at least 2 characters"
+    },
+    "fullName": {
+      "required": "Full name is required",
+      "minLength": "Full name must be at least 2 characters"
+    },
+    "email": {
+      "required": "Email is required",
+      "invalid": "Invalid email format"
+    },
+    "phone": {
+      "required": "Phone number is required",
+      "minLength": "Phone number must be at least 10 digits"
+    },
+    "address": {
+      "required": "Address is required",
+      "minLength": "Address must be at least 5 characters"
+    },
+    "password": {
+      "required": "Password is required",
+      "minLength": "Password must be at least 8 characters"
+    },
+    "confirmPassword": {
+      "required": "Please confirm your password",
+      "match": "Passwords do not match"
+    }
+  },
+  "navigation": {
+    "templates": "Templates",
+    "pricing": "Pricing",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "login": "Login",
+    "getStarted": "Get Started",
+    "menu": "Menu"
+  },
+  "hero": {
+    "title": "Create legally-sound contracts in 2 minutes",
+    "subtitle": "Generate, preview, and share legal documents instantly. No signup required to start - see the value before you commit.",
+    "primaryButton": "Start Free",
+    "secondaryButton": "See Pricing"
+  },
+  "walkthrough": {
+    "subtitle": "How It Works",
+    "title": "Visual 3 - Step Walkthrough",
+    "description": "Creating a legal contract with Snaplegal is simple and stress-free. Just follow three quick steps — answer guided question",
+    "steps": {
+      "0": {
+        "title": "Answer the Guided Questions Carefully",
+        "description": "Simply choose a template and respond to clear, step-by-step prompts. No legal jargon, just plain language."
+      },
+      "1": {
+        "title": "Preview draft + plain-English summary.",
+        "description": "See your contract instantly in a split view — full legal draft on one side, easy-to-read summary on the other."
+      },
+      "2": {
+        "title": "Sign Digitally to Finalize Your Agreement",
+        "description": "When you're ready, e-sign securely and store or share your contract with confidence."
+      }
+    }
+  },
+  "templates": {
+    "subtitle": "Choose Templates",
+    "title": "Popular Templates",
+    "description": "Get started faster with our most used templates, from NDAs and freelance agreements to leases and service contracts. Each template is customizable and comes with a plain-English summary so you always know exactly what you're signing.",
+    "viewAllButton": "View All Templates",
+    "startButton": "Start",
+    "previousAriaLabel": "Previous templates",
+    "nextAriaLabel": "Next templates"
+  },
+  "pricing": {
+    "subtitle": "Pricing",
+    "title": "Pricing Plan (MVP version)",
+    "description": "Choose a plan that fits your needs — whether you're creating a few contracts, managing multiple agreements, or collaborating as a team. Simple, transparent pricing with no hidden fees",
+    "featuresLabel": "Features:",
+    "buttonText": "Get Started",
+    "billingPeriod": "per month",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Ideal for those requiring essential contracts."
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Ideal for professionals and small businesses"
+      },
+      "team": {
+        "name": "Team",
+        "description": "Tailored for teams seeking unlimited flexibility."
+      }
+    },
+    "features": {
+      "unlimited": "Unlimited",
+      "docsPerMonth": "Docs/Month",
+      "spanishUI": "Spanish UI",
+      "emailSupport": "Email Support",
+      "dashboardStorage": "Dashboard Storage",
+      "multiPartyESign": "Multi-Party e-Sign (2+ Signers + Audit Log)",
+      "upTo3Users": "Up to 3 Users",
+      "clauseCustomization": "Clause Customization",
+      "sharedLibrary": "Shared Library",
+      "summaries": "Summaries"
+    },
+    "moreFeatures": "more features"
+  },
+  "subscription": {
+    "redirecting": "Redirecting to payment...",
+    "processing": "Processing...",
+    "success": "Plan selected successfully"
+  },
+  "testimonials": {
+    "subtitle": "Testimonial",
+    "title": "What they say after using our product",
+    "description": "Trusted by freelancers, entrepreneurs, and small teams, SnapLegal makes contract creation simple, fast, and reliable. Here's what our users have to say.",
+    "ctaButton": "View All Testimonial",
+    "previousAriaLabel": "Previous testimonials",
+    "nextAriaLabel": "Next testimonials",
+    "testimonials": [
+      {
+        "text": "SnapLegal saved me hours. I created an NDA in minutes and felt confident with the plain-English summary.",
+        "userName": "Mirana Marci",
+        "userRole": "Freelancer"
+      },
+      {
+        "text": "As a small business owner, I love how simple it is. The Pro plan's multi-party signing is a game changer.",
+        "userName": "David R",
+        "userRole": "Startup Founder"
+      },
+      {
+        "text": "The contract templates are comprehensive and easy to customize. Perfect for my consulting business.",
+        "userName": "Sarah Johnson",
+        "userRole": "Business Consultant"
+      },
+      {
+        "text": "SnapLegal made contract creation so much easier. The e-signature feature saves me tons of time.",
+        "userName": "Michael Chen",
+        "userRole": "Agency Owner"
+      }
+    ]
+  },
+  "statistics": {
+    "subtitle": "Our Impact",
+    "title": "Trusted by Thousands",
+    "description": "Join thousands of users who trust SnapLegal for their contract needs.",
+    "stats": {
+      "contracts": "5,000",
+      "contractsLabel": "Contracts Created",
+      "templates": "25",
+      "templatesLabel": "Ready-made Templates",
+      "users": "2,125",
+      "usersLabel": "Active Users",
+      "summaries": "100",
+      "summariesLabel": "Plain-English Summaries"
+    }
+  },
+  "cta": {
+    "title": "Start your contract today",
+    "description": "Simple, fast, and secure. Create legal contracts in minutes with guided steps and plain-English summaries",
+    "primaryButton": "Start Free",
+    "secondaryButton": "See Pricing"
+  },
+  "footer": {
+    "links": {
+      "templates": "Templates",
+      "pricing": "Pricing",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us"
+    },
+    "social": {
+      "youtube": "YouTube",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "Snaplegal® {year}. All rights reserved."
+  },
+  "about": {
+    "hero": {
+      "title": "Your Strategic Partner for Simple, Secure Contracts",
+      "description": "SnapLegal was built to make legal contracts accessible to everyone — freelancers, entrepreneurs, and small teams. Our platform combines ready-to-use templates, AI-powered assistance, and secure digital signing to save you time and remove complexity. We're committed to helping individuals and businesses create, understand, and manage agreements with confidence."
+    },
+    "ourStory": {
+      "subtitle": "About Snaplegal",
+      "title": "Our Story",
+      "description": "With a clear focus on simplicity and trust, SnapLegal helps individuals and small businesses create professional contracts without the usual complexity or cost. By combining AI-powered guidance, plain-English summaries, and secure e-signatures, we ensure every agreement is fast, clear, and reliable.",
+      "paragraph1": "Snaplegal is dedicated to making contract creation easy and trustworthy for individuals and small businesses. Our platform leverages AI to provide straightforward guidance, clear summaries, and secure electronic signatures, ensuring that every agreement is quick, transparent, and dependable.",
+      "paragraph2": "At SnapLegal, we prioritize simplicity and reliability, enabling individuals and small businesses to draft professional contracts effortlessly. Our innovative use of AI, combined with easy-to-understand summaries and safe e-signatures, guarantees that every contract is processed swiftly and clearly."
+    }
+  },
+  "contact": {
+    "subtitle": "Contact Us",
+    "title": "Have something in Mind? Let's talk!",
+    "description": "Get a free consultation on your project - leave us a request on the website or contact us in any convenient way",
+    "form": {
+      "name": "Your Name*",
+      "companyName": "Company Name*",
+      "email": "Email*",
+      "inquiry": "Inquiry*",
+      "message": "Let's talk about your idea*",
+      "submitButton": "Submit",
+      "scheduleButton": "Schedule a Call",
+      "emailContact": "Also, feel free to email us at",
+      "emailAddress": "contact.snaplegal@gmail.com"
+    },
+    "inquiryOptions": {
+      "general": "General Question",
+      "support": "Product/Feature Request",
+      "partnership": "Partnership/Collaboration",
+      "technical": "Technical Support"
+    }
+  },
+  "logoSlider": {
+    "altTexts": {
+      "snaplegalCertified": "Snaplegal Certified Standard by Law Insider",
+      "americanExpress": "American Express",
+      "panasonic": "Panasonic",
+      "opentext": "OpenText",
+      "diageo": "Diageo",
+      "jera": "Jera",
+      "cazoo": "Cazoo",
+      "gymshark": "Gymshark"
+    }
+  },
+  "pricingPage": {
+    "subtitle": "Pricing",
+    "title": "Pricing Plan (MVP version)",
+    "description": "Choose a plan that fits your needs—whether you're creating a few contracts, managing multiple agreements, or collaborating on a team. Simple, transparent pricing with no hidden fees.",
+    "features": {
+      "title": "Included Features",
+      "docsPerMonth": "Docs/Month",
+      "emailSupport": "Email Support",
+      "dashboardStorage": "Dashboard Storage",
+      "multiPartyESign": "Multi-Party e-Sign (2+ Signers + Audit Log)",
+      "upTo3Users": "Up to 3 Users",
+      "spanishUI": "Spanish UI",
+      "clauseCustomization": "Clause Customization",
+      "sharedLibrary": "Shared Library",
+      "summaries": "Summaries",
+      "prioritySupport": "Priority Support"
+    },
+    "plans": {
+      "starter": "Starter",
+      "pro": "Pro",
+      "team": "Team",
+      "perMonth": "per month",
+      "description": "Ideal for those requiring essential contracts",
+      "getStarted": "Get Started"
+    },
+    "limits": {
+      "tenDocs": "10 Docs",
+      "fiftyDocs": "50 Docs",
+      "unlimited": "Unlimited"
+    }
+  },
+  "lynLanding": {
+    "nav": {
+      "howItWorks": "How it Works",
+      "features": "Features",
+      "plans": "Plans",
+      "support": "Support",
+      "downloadApp": "Download the app"
+    },
+    "ctaLogin": "Login",
+    "ctaStart": "Start now"
+  }
+}

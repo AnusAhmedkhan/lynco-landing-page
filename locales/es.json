@@ -1,0 +1,495 @@
+{
+  "signin": {
+    "signin": "Iniciar Sesión",
+    "welcome": "¡Bienvenido!",
+    "signup": "Registrarse",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "description": "¡Bienvenido de vuelta! Inicia sesión para continuar tu viaje con nuestras increíbles características.",
+    "dontHaveAccount": "¿No tienes una cuenta?",
+    "signUpLink": "Registrarse",
+    "keepLoggedIn": "Mantenerme conectado"
+  },
+  "signup": {
+    "signup": "Registrarse",
+    "getStarted": "¡Comenzar!",
+    "signin": "Iniciar Sesión",
+    "description": "¡Regístrate para comenzar con nuestras increíbles características! Solo completa tus datos para crear tu cuenta.",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "signInLink": "Iniciar sesión"
+  },
+  "forgotPassword": {
+    "forgotPassword": "Olvidé mi Contraseña",
+    "description": "Ingresa tu correo electrónico para restablecer tu contraseña",
+    "sendCode": "Obtener Código",
+    "signin": "Iniciar Sesión"
+  },
+  "resetPassword": {
+    "resetPassword": "Restablecer Contraseña",
+    "description": "Ingresa tu nueva contraseña para completar el proceso de restablecimiento",
+    "reset": "Cambiar Contraseña",
+    "success": {
+      "imageAlt": "Éxito",
+      "heading": "Tu Contraseña se Cambió Exitosamente",
+      "description": "Inicia sesión en tu cuenta con tu nueva contraseña",
+      "signInButton": "Iniciar Sesión"
+    }
+  },
+  "otp": {
+    "verifyIdentity": "Verificación OTP",
+    "description": "Revisa tu correo electrónico para ver el código de verificación",
+    "enterOTP": "Ingresar OTP",
+    "verify": "Verificar",
+    "receiveOTP": "¿No recibiste un OTP aún?",
+    "resend": "Reenviar ahora",
+    "otpSuccess": "OTP verificado exitosamente"
+  },
+  "form": {
+    "name": {
+      "placeholder": "Tu Nombre Completo"
+    },
+    "email": {
+      "label": "Dirección de Correo Electrónico",
+      "placeholder": "juan@ejemplo.com"
+    },
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "confirmPasswordPlaceholder": "Confirmar Contraseña",
+    "newPassword": "Nueva Contraseña",
+    "confirmNewPassword": "Confirmar Nueva Contraseña",
+    "passwordPlaceholder": "••••••",
+    "currentPassword": {
+      "label": "Contraseña Actual",
+      "placeholder": "Contraseña Actual*"
+    },
+    "phone": {
+      "label": "Número de Teléfono",
+      "placeholder": "Teléfono*"
+    },
+    "company": {
+      "label": "Empresa",
+      "placeholder": "Empresa"
+    },
+    "designation": {
+      "label": "Designación",
+      "placeholder": "Designación"
+    },
+    "address": {
+      "label": "Dirección",
+      "placeholder": "Dirección*"
+    }
+  },
+  "sidebar": {
+    "logout": "Cerrar Sesión",
+    "logoutModal": "¿Cerrar Sesión?",
+    "logoutModalDescription": "Serás desconectado de tu cuenta y redirigido a la página de inicio de sesión."
+  },
+  "header": {
+    "darkMode": "Modo Oscuro",
+    "lightMode": "Modo Claro"
+  },
+  "profile": {
+    "title": "Perfil",
+    "accountSettings": "Configuración de Cuenta",
+    "role": "Acuerdo de Desarrollo Web Freelance",
+    "fields": {
+      "fullName": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "company": "Empresa",
+      "location": "Ubicación",
+      "phone": "Teléfono",
+      "designation": "Designación"
+    }
+  },
+  "accountSettings": {
+    "title": "Configuración de Cuenta",
+    "buttons": {
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "updatePassword": "Actualizar Contraseña"
+    },
+    "navigation": {
+      "profile": "Perfil",
+      "changePassword": "Cambiar Contraseña",
+      "notificationPreferences": "Preferencias de Notificación"
+    },
+    "profile": {
+      "title": "Perfil",
+      "updateSuccess": "Perfil actualizado exitosamente",
+      "fields": {
+        "fullName": "Tu Nombre Completo",
+        "email": "Correo Electrónico",
+        "contactNo": "Número de Contacto",
+        "company": "Empresa",
+        "designation": "Designación",
+        "address": "Dirección/Ubicación"
+      }
+    },
+    "changePassword": {
+      "title": "Cambiar Contraseña",
+      "updateSuccess": "Contraseña cambiada exitosamente",
+      "fields": {
+        "currentPassword": "Contraseña Actual",
+        "newPassword": "Nueva Contraseña",
+        "confirmPassword": "Confirmar Contraseña"
+      },
+      "placeholders": {
+        "currentPassword": "Ingresa tu contraseña actual",
+        "newPassword": "Ingresa tu nueva contraseña",
+        "confirmPassword": "Confirma tu nueva contraseña"
+      },
+      "securityNote": {
+        "title": "Aviso de Seguridad",
+        "description": "Cuando actualices tu contraseña, todas las sesiones activas serán cerradas y necesitarás iniciar sesión nuevamente."
+      }
+    },
+    "notifications": {
+      "title": "Preferencias de Notificación",
+      "updateSuccess": "Preferencias de notificación actualizadas exitosamente",
+      "emailUpdates": {
+        "title": "Actualizaciones por Correo",
+        "description": "Recibe actualizaciones importantes sobre tu cuenta y servicios"
+      },
+      "marketingEmails": {
+        "title": "Correos de Marketing",
+        "description": "Recibe contenido promocional y ofertas especiales"
+      }
+    },
+    "deleteAccount": {
+      "title": "Eliminar Cuenta",
+      "description": "Elimina permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer.",
+      "button": "Eliminar Cuenta",
+      "deleteSuccess": "Cuenta eliminada exitosamente",
+      "modal": {
+        "title": "Eliminar Cuenta",
+        "description": "¿Estás seguro de que quieres eliminar tu cuenta? Esta acción no se puede deshacer y eliminará permanentemente todos tus datos, incluyendo tu perfil, configuraciones y cualquier contenido asociado.",
+        "confirm": "Sí, Eliminar Cuenta",
+        "cancel": "Cancelar"
+      }
+    }
+  },
+  "dashboard": {
+    "header": {
+      "welcome": "¡Bienvenido de nuevo, {{name}}!",
+      "ready": "¿Listo para continuar tu viaje?"
+    },
+    "menu": {
+      "profile": "Configuración de Perfil",
+      "profileSettings": "Configuración de Perfil",
+      "accountSettings": "Configuración de Cuenta",
+      "logout": "Cerrar Sesión"
+    },
+    "notifications": "Notificaciones",
+    "defaults": {
+      "user": "Usuario",
+      "userEmail": "usuario@ejemplo.com",
+      "notSpecified": "No especificado"
+    }
+  },
+  "common": {
+    "or": "o",
+    "continueWithGoogle": "Continuar con Google",
+    "continue": "Continuar",
+    "goBack": "Volver",
+    "somethingWentWrong": "Algo salió mal",
+    "seconds": "segundos",
+    "minute": "minuto",
+    "pleaseWait": "Por favor espera...",
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "failedToLoadPricingPlans": "No se pudieron cargar los planes de precios"
+  },
+  "auth": {
+    "continueJourney": "Continúa tu Viaje Legal",
+    "loginDescription": "Inicia sesión para continuar exactamente donde lo dejaste, tus contratos están seguros y listos.",
+    "logoAlt": "Logo de Snaplegal",
+    "signupSuccess": "¡Cuenta creada exitosamente! Por favor inicia sesión para continuar.",
+    "loginSuccess": "¡Bienvenido de nuevo! Has iniciado sesión exitosamente."
+  },
+  "validationErrors": {
+    "invalidEmail": "*Por favor ingresa una dirección de correo electrónico válida",
+    "lowerCase": "*La contraseña debe contener al menos una letra minúscula",
+    "upperCase": "*La contraseña debe contener al menos una letra mayúscula",
+    "number": "*La contraseña debe contener al menos un número",
+    "specialChar": "*La contraseña debe contener al menos un carácter especial",
+    "minimumLength": "*La longitud mínima es {{minimumLength}} caracteres",
+    "maximumLength": "*La longitud máxima es {{maximumLength}} caracteres",
+    "minimumValue": "*El valor mínimo es {{minimumValue}}",
+    "maximumValue": "*El valor máximo es {{maximumValue}}",
+    "invalidOption": "*Opción inválida",
+    "invalidFormat": "*Formato inválido",
+    "passwordsMustMatch": "*Las contraseñas deben coincidir",
+    "required": "*Este campo es requerido"
+  },
+  "validation": {
+    "name": {
+      "required": "El nombre es requerido",
+      "minLength": "El nombre debe tener al menos 2 caracteres"
+    },
+    "fullName": {
+      "required": "El nombre completo es requerido",
+      "minLength": "El nombre completo debe tener al menos 2 caracteres"
+    },
+    "email": {
+      "required": "El correo electrónico es requerido",
+      "invalid": "Formato de correo electrónico inválido"
+    },
+    "phone": {
+      "required": "El número de teléfono es requerido",
+      "minLength": "El número de teléfono debe tener al menos 10 dígitos"
+    },
+    "address": {
+      "required": "La dirección es requerida",
+      "minLength": "La dirección debe tener al menos 5 caracteres"
+    },
+    "password": {
+      "required": "La contraseña es requerida",
+      "minLength": "La contraseña debe tener al menos 8 caracteres"
+    },
+    "confirmPassword": {
+      "required": "Por favor confirma tu contraseña",
+      "match": "Las contraseñas no coinciden"
+    }
+  },
+  "navigation": {
+    "templates": "Plantillas",
+    "pricing": "Precios",
+    "aboutUs": "Acerca de Nosotros",
+    "contactUs": "Contáctanos",
+    "login": "Iniciar Sesión",
+    "getStarted": "Comenzar",
+    "menu": "Menú"
+  },
+  "hero": {
+    "title": "Crea contratos legalmente válidos en 2 minutos",
+    "subtitle": "Genera, previsualiza y comparte documentos legales al instante. No se requiere registro para comenzar - ve el valor antes de comprometerte.",
+    "primaryButton": "Comenzar Gratis",
+    "secondaryButton": "Ver Precios"
+  },
+  "walkthrough": {
+    "subtitle": "Cómo Funciona",
+    "title": "Recorrido Visual de 3 Pasos",
+    "description": "Crear un contrato legal con Snaplegal es simple y sin estrés. Solo sigue tres pasos rápidos — responde preguntas guiadas",
+    "steps": {
+      "0": {
+        "title": "Responde las Preguntas Guiadas Cuidadosamente",
+        "description": "Simplemente elige una plantilla y responde a indicaciones claras paso a paso. Sin jerga legal, solo lenguaje claro."
+      },
+      "1": {
+        "title": "Previsualiza borrador + resumen en lenguaje claro.",
+        "description": "Ve tu contrato al instante en una vista dividida — borrador legal completo en un lado, resumen fácil de leer en el otro."
+      },
+      "2": {
+        "title": "Firma Digitalmente para Finalizar tu Acuerdo",
+        "description": "Cuando estés listo, firma electrónicamente de forma segura y almacena o comparte tu contrato con confianza."
+      }
+    }
+  },
+  "templates": {
+    "subtitle": "Elige Plantillas",
+    "title": "Plantillas Populares",
+    "description": "Comienza más rápido con nuestras plantillas más utilizadas, desde NDAs y acuerdos de freelance hasta arrendamientos y contratos de servicio. Cada plantilla es personalizable y viene con un resumen en lenguaje claro para que siempre sepas exactamente lo que estás firmando.",
+    "viewAllButton": "Ver Todas las Plantillas",
+    "startButton": "Comenzar",
+    "previousAriaLabel": "Plantillas anteriores",
+    "nextAriaLabel": "Siguientes plantillas"
+  },
+  "pricing": {
+    "subtitle": "Precios",
+    "title": "Precios Simples y Transparentes",
+    "description": "Elige el plan que se adapte a tus necesidades. Todos los planes incluyen nuestras características principales sin tarifas ocultas.",
+    "featuresLabel": "Características:",
+    "buttonText": "Comenzar",
+    "billingPeriod": "por mes",
+    "plans": {
+      "starter": {
+        "name": "Inicial",
+        "description": "Ideal para aquellos que requieren contratos esenciales."
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Ideal para profesionales y pequeñas empresas"
+      },
+      "team": {
+        "name": "Equipo",
+        "description": "Adaptado para equipos que buscan flexibilidad ilimitada."
+      }
+    },
+    "features": {
+      "unlimited": "Ilimitado",
+      "docsPerMonth": "Docs/Mes",
+      "spanishUI": "UI en Español",
+      "emailSupport": "Soporte por Email",
+      "dashboardStorage": "Almacenamiento en Dashboard",
+      "multiPartyESign": "Firma Electrónica Multi-Parte (2+ Firmantes + Registro de Auditoría)",
+      "upTo3Users": "Hasta 3 Usuarios",
+      "clauseCustomization": "Personalización de Cláusulas",
+      "sharedLibrary": "Biblioteca Compartida",
+      "summaries": "Resúmenes"
+    },
+    "moreFeatures": "más características"
+  },
+  "subscription": {
+    "redirecting": "Redirigiendo al pago...",
+    "processing": "Procesando...",
+    "success": "Plan seleccionado exitosamente"
+  },
+  "testimonials": {
+    "subtitle": "Testimonio",
+    "title": "Lo que dicen después de usar nuestro producto",
+    "description": "Confiado por freelancers, emprendedores y pequeños equipos, SnapLegal hace que la creación de contratos sea simple, rápida y confiable. Esto es lo que nuestros usuarios tienen que decir.",
+    "ctaButton": "Ver Todos los Testimonios",
+    "previousAriaLabel": "Testimonios anteriores",
+    "nextAriaLabel": "Siguientes testimonios",
+    "testimonials": [
+      {
+        "text": "SnapLegal me ahorró horas. Creé un NDA en minutos y me sentí confiado con el resumen en lenguaje claro.",
+        "userName": "Mirana Marci",
+        "userRole": "Freelancer"
+      },
+      {
+        "text": "Como propietario de una pequeña empresa, me encanta lo simple que es. La firma multi-parte del plan Pro es un cambio total.",
+        "userName": "David R",
+        "userRole": "Fundador de Startup"
+      },
+      {
+        "text": "Las plantillas de contratos son completas y fáciles de personalizar. Perfectas para mi negocio de consultoría.",
+        "userName": "Sarah Johnson",
+        "userRole": "Consultora de Negocios"
+      },
+      {
+        "text": "SnapLegal hizo la creación de contratos mucho más fácil. La función de firma electrónica me ahorra mucho tiempo.",
+        "userName": "Michael Chen",
+        "userRole": "Propietario de Agencia"
+      }
+    ]
+  },
+  "statistics": {
+    "subtitle": "Nuestro Impacto",
+    "title": "Confiado por Miles",
+    "description": "Únete a miles de usuarios que confían en SnapLegal para sus necesidades de contratos.",
+    "stats": {
+      "contracts": "5,000",
+      "contractsLabel": "Contratos Creados",
+      "templates": "25",
+      "templatesLabel": "Plantillas Listas para Usar",
+      "users": "2,125",
+      "usersLabel": "Usuarios Activos",
+      "summaries": "100",
+      "summariesLabel": "Resúmenes en Lenguaje Claro"
+    }
+  },
+  "cta": {
+    "title": "Comienza tu contrato hoy",
+    "description": "Simple, rápido y seguro. Crea contratos legales en minutos con pasos guiados y resúmenes en lenguaje claro",
+    "primaryButton": "Comenzar Gratis",
+    "secondaryButton": "Ver Precios"
+  },
+  "footer": {
+    "links": {
+      "templates": "Plantillas",
+      "pricing": "Precios",
+      "aboutUs": "Acerca de Nosotros",
+      "contactUs": "Contáctanos"
+    },
+    "social": {
+      "youtube": "YouTube",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "Snaplegal® {year}. Todos los derechos reservados."
+  },
+  "about": {
+    "hero": {
+      "title": "Tu Socio Estratégico para Contratos Simples y Seguros",
+      "description": "SnapLegal fue construido para hacer los contratos legales accesibles para todos — freelancers, emprendedores y pequeños equipos. Nuestra plataforma combina plantillas listas para usar, asistencia impulsada por IA y firma digital segura para ahorrarte tiempo y eliminar la complejidad. Estamos comprometidos a ayudar a individuos y empresas a crear, entender y gestionar acuerdos con confianza."
+    },
+    "ourStory": {
+      "subtitle": "Acerca de Snaplegal",
+      "title": "Nuestra Historia",
+      "description": "Con un enfoque claro en la simplicidad y la confianza, SnapLegal ayuda a individuos y pequeñas empresas a crear contratos profesionales sin la complejidad o costo habitual. Al combinar orientación impulsada por IA, resúmenes en lenguaje claro y firmas electrónicas seguras, nos aseguramos de que cada acuerdo sea rápido, claro y confiable.",
+      "paragraph1": "Snaplegal está dedicado a hacer la creación de contratos fácil y confiable para individuos y pequeñas empresas. Nuestra plataforma aprovecha la IA para proporcionar orientación directa, resúmenes claros y firmas electrónicas seguras, asegurando que cada acuerdo sea rápido, transparente y confiable.",
+      "paragraph2": "En SnapLegal, priorizamos la simplicidad y la confiabilidad, permitiendo a individuos y pequeñas empresas redactar contratos profesionales sin esfuerzo. Nuestro uso innovador de la IA, combinado con resúmenes fáciles de entender y firmas electrónicas seguras, garantiza que cada contrato se procese rápida y claramente."
+    }
+  },
+  "contact": {
+    "subtitle": "Contáctanos",
+    "title": "¿Tienes algo en mente? ¡Hablemos!",
+    "description": "Obtén una consulta gratuita sobre tu proyecto - déjanos una solicitud en el sitio web o contáctanos de cualquier manera conveniente",
+    "form": {
+      "name": "Tu Nombre*",
+      "companyName": "Nombre de la Empresa*",
+      "email": "Correo Electrónico*",
+      "inquiry": "Consulta*",
+      "message": "Hablemos de tu idea*",
+      "submitButton": "Dejar una Solicitud",
+      "scheduleButton": "Programar una Llamada",
+      "emailContact": "También, siéntete libre de enviarnos un correo a",
+      "emailAddress": "contact.snaplegal@gmail.com"
+    },
+    "inquiryOptions": {
+      "general": "Consulta General",
+      "support": "Soporte",
+      "partnership": "Asociación",
+      "sales": "Ventas",
+      "technical": "Problema Técnico"
+    }
+  },
+  "logoSlider": {
+    "altTexts": {
+      "snaplegalCertified": "Snaplegal Certificado Estándar por Law Insider",
+      "americanExpress": "American Express",
+      "panasonic": "Panasonic",
+      "opentext": "OpenText",
+      "diageo": "Diageo",
+      "jera": "Jera",
+      "cazoo": "Cazoo",
+      "gymshark": "Gymshark"
+    }
+  },
+  "pricingPage": {
+    "subtitle": "Precios",
+    "title": "Plan de Precios (versión MVP)",
+    "description": "Elige un plan que se adapte a tus necesidades—ya sea que estés creando algunos contratos, gestionando múltiples acuerdos o colaborando en equipo. Precios simples y transparentes sin tarifas ocultas.",
+    "features": {
+      "title": "Características Incluidas",
+      "docsPerMonth": "Docs/Mes",
+      "emailSupport": "Soporte por Email",
+      "dashboardStorage": "Almacenamiento en Dashboard",
+      "multiPartyESign": "Firma Electrónica Multi-Parte (2+ Firmantes + Registro de Auditoría)",
+      "upTo3Users": "Hasta 3 Usuarios",
+      "spanishUI": "Interfaz en Español",
+      "clauseCustomization": "Personalización de Cláusulas",
+      "sharedLibrary": "Biblioteca Compartida",
+      "summaries": "Resúmenes",
+      "prioritySupport": "Soporte Prioritario"
+    },
+    "plans": {
+      "starter": "Inicial",
+      "pro": "Pro",
+      "team": "Equipo",
+      "perMonth": "por mes",
+      "description": "Ideal para aquellos que requieren contratos esenciales",
+      "getStarted": "Comenzar"
+    },
+    "limits": {
+      "tenDocs": "10 Docs",
+      "fiftyDocs": "50 Docs",
+      "unlimited": "Ilimitado"
+    }
+  },
+  "lynLanding": {
+    "nav": {
+      "howItWorks": "Cómo funciona",
+      "features": "Funciones",
+      "plans": "Planes",
+      "support": "Soporte",
+      "downloadApp": "Descargar la app"
+    },
+    "ctaLogin": "Iniciar sesión",
+    "ctaStart": "Empezar ahora"
+  }
+}

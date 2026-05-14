@@ -1,0 +1,371 @@
+@import "tailwindcss";
+
+@plugin 'tailwindcss-animate';
+
+@layer base {
+  html {
+    background-color: var(--color-background);
+  }
+
+  /* Fix autofill styling for input fields */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+    -webkit-text-fill-color: #6b7280 !important; /* secondary-text color */
+    background-color: transparent !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  /* For dark mode autofill */
+  @media (prefers-color-scheme: dark) {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-text-fill-color: #9ca3af !important; /* lighter text for dark mode */
+    }
+  }
+}
+
+@layer utilities {
+  .mix-blend {
+    mix-blend-mode: soft-light;
+  }
+  .gradient-border-lighter {
+    border-style: solid;
+    border-color: transparent;
+    background-image:
+      linear-gradient(var(--color-foreground), var(--color-foreground)),
+      linear-gradient(
+        to right,
+        color-mix(in srgb, var(--color-gradient-4) 50%, transparent),
+        color-mix(in srgb, var(--color-gradient-3) 50%, transparent),
+        color-mix(in srgb, var(--color-gradient-2) 50%, transparent),
+        color-mix(in srgb, var(--color-gradient-1) 50%, transparent)
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .gradient-border-darker {
+    border-style: solid;
+    border-color: transparent;
+    background-image:
+      linear-gradient(var(--color-foreground), var(--color-foreground)),
+      linear-gradient(
+        to right,
+        var(--color-gradient-4),
+        var(--color-gradient-3),
+        var(--color-gradient-2),
+        var(--color-gradient-1)
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  /* Status styling with gradient borders */
+  .status-active {
+    color: var(--color-status-active);
+  }
+
+  .status-cancelled {
+    color: var(--color-status-cancelled);
+  }
+
+  .status-past-due {
+    color: var(--color-status-past-due);
+  }
+
+  .status-dot-active {
+    background-color: var(--color-status-active);
+  }
+
+  .status-dot-cancelled {
+    background-color: var(--color-status-cancelled);
+  }
+
+  .status-dot-past-due {
+    background-color: var(--color-status-past-due);
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      270deg,
+      var(--color-gradient-1),
+      var(--color-gradient-2),
+      var(--color-gradient-3),
+      var(--color-gradient-4)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .icon-gradient {
+    color: var(--color-gradient-1);
+  }
+
+  .icon-gradient svg {
+    fill: currentColor;
+  }
+
+  .radial-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 510.71px;
+    height: 101.78px;
+
+    background: linear-gradient(
+      270deg,
+      var(--color-gradient-1) 0%,
+      var(--color-gradient-2) 25%,
+      var(--color-gradient-3) 50%,
+      var(--color-gradient-4) 100%
+    );
+    filter: blur(205.193px);
+  }
+
+  .box-shadow {
+    box-shadow: 0px 4.1px 14.55px 0px #034257;
+  }
+
+  .linear-gradient {
+    @apply bg-[linear-gradient(to_right,var(--color-gradient-1),var(--color-gradient-2),var(--color-gradient-3),var(--color-gradient-4))];
+  }
+
+  .inner-container {
+    @apply space-y-2 rounded-[9px] border p-4 md:space-y-4;
+  }
+
+  /* Custom scrollbar for scrollable containers */
+  .bs-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-gradient-3) transparent;
+  }
+
+  .bs-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .bs-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .bs-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      var(--color-gradient-2),
+      var(--color-gradient-3)
+    );
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .bs-scroll:hover::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      var(--color-gradient-1),
+      var(--color-gradient-2)
+    );
+  }
+
+  /* Logo Slider Animation */
+  @keyframes logo-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-logo-scroll {
+    animation: logo-scroll 30s linear infinite;
+  }
+
+  .animate-logo-scroll:hover {
+    animation-play-state: paused;
+  }
+
+  /* Pricing Card Gradient */
+  .pricing-card-gradient {
+    background: linear-gradient(
+      175deg,
+      var(--color-purple-100) -80.34%,
+      var(--color-white) 94.86%
+    );
+  }
+
+  .lyn-gradient-text {
+    background: linear-gradient(
+      102deg,
+      var(--color-lyn-accent-from),
+      var(--color-lyn-accent-to)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .lyn-btn-primary {
+    background: linear-gradient(
+      101deg,
+      var(--color-lyn-accent-from),
+      var(--color-lyn-accent-to)
+    );
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .lyn-login-text {
+    background: linear-gradient(
+      180deg,
+      var(--color-lyn-btn-from) 9.37%,
+      var(--color-lyn-btn-to) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Define theme variables inside the @theme block */
+@theme {
+  --font-lato: "Lato", sans-serif;
+  --color-background: oklch(1 0 0);
+  --color-foreground: #fafafa;
+  --color-gradient-1: #1f84ff;
+  --color-gradient-2: #106393;
+  --color-gradient-3: #219dd7;
+  --color-gradient-4: #6cd5ff;
+  --color-main-text: oklch(100% 0 0);
+  --color-secondary-text: #6b7280;
+  --color-grayWhite: #f9fafb;
+  --color-primary: #1e3a8a;
+  --color-gray: rgba(74, 74, 74, 1);
+  --color-lightGreen: oklch(74.25% 0.175 149.28);
+  --color-outline: #10639333;
+
+  --color-chart-text: oklch(0 0 0);
+  --color-bluish-cyan: #f2f8ff;
+  --color-gray-light: #dbdbdb;
+  --color-bluish-cyan-dark: #06b6d4;
+  --color-green: #10b981;
+  --color-orangeCream: #f59e0b;
+  --color-neutral-300: #f1f2f9;
+  --color-purple-100: #f1f0fb;
+  --color-lightGray: #a0a3bd;
+  --color-borderGray: #d9dbe9;
+  --color-backgroundGray: #fbfbfe;
+  --color-primary-dark: #0f172a;
+  --color-gray-dark: #374151;
+  --color-brown-light: #7c6f64;
+  --color-brown: #624b45;
+  --color-danger: #d73e6e;
+
+  --color-status-active: rgba(0, 168, 34, 1);
+  --color-status-cancelled: rgba(241, 64, 64, 1);
+  --color-status-past-due: rgba(240, 155, 64, 1);
+
+  /* LYNCO marketing landing (Figma) */
+  --color-lyn-bg: #000000;
+  --color-lyn-surface: #171717;
+  --color-lyn-muted: #cacaca;
+  --color-lyn-border: rgba(255, 255, 255, 0.2);
+  --color-lyn-card-border: rgba(255, 255, 255, 0.1);
+  --color-lyn-accent-from: #2e49b8;
+  --color-lyn-accent-to: #6787e4;
+  --color-lyn-secondary: #6e90f6;
+  --color-lyn-btn-from: #1152d5;
+  --color-lyn-btn-to: #003199;
+  --color-lyn-green: #549e69;
+  --color-lyn-chip-bg: rgba(21, 21, 23, 0.4);
+  --color-lyn-glass: rgba(255, 255, 255, 0.05);
+  --color-lyn-glass-strong: rgba(255, 255, 255, 0.1);
+
+  --breakpoint-xs: 450px;
+}
+
+/* Dark mode overrides */
+@theme dark {
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(17.74% 0.004 264.46);
+  --color-gradient-1: #1f84ff;
+  --color-gradient-2: #106393;
+  --color-gradient-3: #219dd7;
+  --color-gradient-4: #6cd5ff;
+  --color-main-text: oklch(100% 0 0);
+  --color-secondary-text: #6b7280;
+  --color-primary: #1e3a8a;
+  --color-gray: oklch(83.9% 0 0);
+  --color-lightGreen: oklch(74.25% 0.175 149.28);
+  --color-outline: #10639333;
+  --color-grayWhite: #f9fafb;
+  --color-bluish-cyan-dark: #06b6d4;
+  --color-chart-text: oklch(100% 0 0);
+  --color-borderGray: #d9dbe9;
+  --color-backgroundGray: #fbfbfe;
+  --color-brown: #624b45;
+  --color-light-brown: #7c6f64;
+  /* Status colors */
+  --color-status-active: rgba(0, 168, 34, 1);
+  --color-status-cancelled: rgba(241, 64, 64, 1);
+  --color-status-past-due: rgba(240, 155, 64, 1);
+  --color-danger: #d73e6e;
+
+  --color-lyn-bg: #000000;
+  --color-lyn-surface: #171717;
+  --color-lyn-muted: #cacaca;
+  --color-lyn-border: rgba(255, 255, 255, 0.2);
+  --color-lyn-card-border: rgba(255, 255, 255, 0.1);
+  --color-lyn-accent-from: #2e49b8;
+  --color-lyn-accent-to: #6787e4;
+  --color-lyn-secondary: #6e90f6;
+  --color-lyn-btn-from: #1152d5;
+  --color-lyn-btn-to: #003199;
+  --color-lyn-green: #549e69;
+  --color-lyn-chip-bg: rgba(21, 21, 23, 0.4);
+  --color-lyn-glass: rgba(255, 255, 255, 0.05);
+  --color-lyn-glass-strong: rgba(255, 255, 255, 0.1);
+}
+
+/* Autofill Styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--color-text-primary);
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px transparent;
+}
+
+/* Hide Microsoft Edge Default Eye Icon */
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+
+/* Statistics Card Shadow Utility */
+.statistics-card-shadow {
+  box-shadow: 0 26.786px 117.19px 0 rgba(32, 36, 138, 0.06);
+}
+
+/* Button Gradient Hover Effects */
+.btn-gradient-hover-ltr {
+  @apply before:to-primary relative overflow-hidden before:absolute before:inset-0 before:z-[-1] before:bg-gradient-to-r before:from-cyan-600 before:from-40% before:to-100% before:opacity-0 before:transition-opacity before:duration-1000 before:ease-in-out hover:before:opacity-100;
+}
+
+.btn-gradient-hover-rtl {
+  @apply relative overflow-hidden before:absolute before:inset-0 before:z-[-1] before:bg-gradient-to-l before:from-cyan-600 before:from-1% before:to-white before:to-100% before:opacity-0 before:transition-opacity before:duration-1000 before:ease-in-out hover:before:opacity-100;
+}
+
+.btn-text-hover-primary {
+  @apply hover:text-primary-dark transition-colors duration-1000 ease-in-out;
+}
+
+.btn-text-hover-gray {
+  @apply hover:text-gray-dark transition-colors duration-1000 ease-in-out;
+}
+.bg-home-overlay {
+  background-image: url("/assets/homeOverlay.webp");
+}
