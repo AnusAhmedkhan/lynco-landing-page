@@ -6,6 +6,7 @@ import { initReactI18next } from "react-i18next";
 import { Language } from "@/constants/language";
 import en from "@/locales/en.json";
 import es from "@/locales/es.json";
+import pt from "@/locales/pt.json";
 const getSavedLanguage = () => {
   if (typeof window !== "undefined") {
     const savedLanguage = localStorage.getItem("i18nextLng");
@@ -19,6 +20,9 @@ const resources = {
   },
   es: {
     translation: es,
+  },
+  pt: {
+    translation: pt,
   },
 };
 

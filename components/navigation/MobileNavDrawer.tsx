@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Typography } from "@/components/Typography";
+import { LynLandingNavLink } from "@/components/navigation/LynLandingNavLink";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -15,30 +16,35 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
 
 interface NavItem {
   href: string;
   labelKey: string;
-  /** When set, shown instead of `t(labelKey)` (e.g. marketing pages with fixed copy). */
   label?: string;
 }
 
 interface MobileNavDrawerProps {
   items: NavItem[];
   cta?: { href: string; labelKey: string; label?: string };
+  /** LYNCO landing: dark glass drawer + in-page scroll for #hash links */
+  variant?: "default" | "lyn";
 }
 
-const MobileNavDrawer = ({ items, cta }: MobileNavDrawerProps) => {
+const MobileNavDrawer = ({
+  items,
+  cta,
+  variant = "default",
+}: MobileNavDrawerProps) => {
   const { t } = useTranslation();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const isLyn = variant === "lyn";
 
-  // Close on route change by relying on SheetClose wrapping links
   useEffect(() => {
-    // no-op: dependency keeps component aware of route changes
+    // keeps drawer in sync with route
   }, [pathname]);
 
-  // Close when viewport switches to lg and above
   useEffect(() => {
     if (typeof window === "undefined") return;
     const media = window.matchMedia("(min-width: 1024px)");
@@ -53,42 +59,71 @@ const MobileNavDrawer = ({ items, cta }: MobileNavDrawerProps) => {
   const resolvedMenuLabel =
     menuLabel === "navigation.menu" ? "Menu" : menuLabel;
 
+  const close = () => setOpen(false);
+
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        {/* <Button variant="plain" size="icon" className="lg:hidden"> */}
-        <div className="lg:hidden cursor-pointer flex items-center justify-center">
+        <div className="flex cursor-pointer items-center justify-center lg:hidden">
           <Menu className="h-5 w-5 text-inherit" />
         </div>
-        {/* </Button>x */}
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="w-[84%] px-4 py-6 sm:max-w-sm"
+        overlayClassName={isLyn ? "bg-black/70 backdrop-blur-sm" : undefined}
+        className={cn(
+          "w-[84%] border-r px-4 py-6 sm:max-w-sm",
+          isLyn
+            ? "lyn-glass border-lyn-border !bg-lyn-bg text-white"
+            : "bg-white"
+        )}
         aria-label={resolvedMenuLabel}
       >
         <SheetTitle className="sr-only">{resolvedMenuLabel}</SheetTitle>
         <div className="flex flex-col gap-6">
           <div className="px-1">
-            <Typography className="text-primary font-bold" variant="lg">
+            <Typography
+              className={cn("font-bold", isLyn ? "text-white" : "text-primary")}
+              variant="lg"
+            >
               {resolvedMenuLabel}
             </Typography>
           </div>
 
-          <nav className="flex flex-col gap-2">
+          <nav className="flex flex-col gap-1">
             {items.map((item) => {
+              const label = item.label ?? t(item.labelKey);
+              const isHash = item.href.startsWith("#");
+
+              if (isLyn && isHash) {
+                return (
+                  <LynLandingNavLink
+                    key={item.href}
+                    href={item.href}
+                    label={label}
+                    onNavigate={close}
+                    className="text-lyn-muted rounded-md px-3 py-2.5 text-base font-medium hover:text-white"
+                  />
+                );
+              }
+
               const isActive = pathname === item.href;
               return (
                 <SheetClose asChild key={item.href}>
                   <Link
                     href={item.href}
-                    className={`rounded-md px-3 py-2 text-base font-medium transition-colors ${
+                    className={cn(
+                      "rounded-md px-3 py-2 text-base font-medium transition-colors",
                       isActive
-                        ? "text-primary"
-                        : "text-secondary-text hover:text-primary"
-                    }`}
+                        ? isLyn
+                          ? "text-white"
+                          : "text-primary"
+                        : isLyn
+                          ? "text-lyn-muted hover:text-white"
+                          : "text-secondary-text hover:text-primary"
+                    )}
                   >
-                    {item.label ?? t(item.labelKey)}
+                    {label}
                   </Link>
                 </SheetClose>
               );
@@ -98,8 +133,14 @@ const MobileNavDrawer = ({ items, cta }: MobileNavDrawerProps) => {
           {cta && (
             <div className="mt-2">
               <SheetClose asChild>
-                <Link href={cta.href} className="block">
-                  <Button variant="solidBlue" className="w-full rounded-3xl">
+                <Link href={cta.href} className="block" onClick={close}>
+                  <Button
+                    variant="solidBlue"
+                    className={cn(
+                      "w-full rounded-xl",
+                      isLyn && "lyn-btn-primary border-0"
+                    )}
+                  >
                     {cta.label ?? t(cta.labelKey)}
                   </Button>
                 </Link>

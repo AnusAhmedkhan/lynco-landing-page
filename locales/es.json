@@ -484,10 +484,12 @@
   "lynLanding": {
     "nav": {
       "howItWorks": "Cómo funciona",
-      "features": "Funciones",
+      "automation": "Automatización",
+      "pos": "POS",
+      "app": "App",
       "plans": "Planes",
-      "support": "Soporte",
-      "downloadApp": "Descargar la app"
+      "faq": "FAQ",
+      "downloadApp": "Descargar"
     },
     "ctaLogin": "Iniciar sesión",
     "ctaStart": "Empezar ahora"

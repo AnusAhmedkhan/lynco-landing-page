@@ -15,34 +15,34 @@ export function LynHeroMetricsDesktop() {
       <MetricFloat
         src={HERO_METRIC_IMAGES.leftTop}
         alt=""
-        className="left-[1%] top-0 w-[min(150px,12vw)] -rotate-[17deg] min-[1200px]:left-[3%] min-[1200px]:w-[min(172px,14vw)]"
+        className="left-[10%] -top-[2%] w-[min(150px,12vw)] -rotate-[14deg] min-[1200px]:left-[3%] min-[1200px]:w-[min(172px,14vw)]"
       />
       <MetricFloat
         src={HERO_METRIC_IMAGES.leftMid}
         alt=""
-        className="left-0 top-[38%] w-[min(150px,12vw)] -rotate-[9deg] min-[1200px]:left-[1%] min-[1200px]:top-[40%] min-[1200px]:w-[min(172px,14vw)]"
+        className="left-18 top-[37%] w-[min(150px,12vw)] -rotate-[4deg] min-[1200px]:left-[1%] min-[1200px]:top-[37%] min-[1200px]:w-[min(172px,14vw)]"
       />
       <MetricFloat
         src={HERO_METRIC_IMAGES.leftBottom}
         alt=""
-        className="left-[1%] top-[70%] w-[min(158px,13vw)] -rotate-[8deg] min-[1200px]:left-[3%] min-[1200px]:top-[72%] min-[1200px]:w-[min(188px,15vw)]"
+        className="left-[8%] top-[70%] w-[min(158px,13vw)] -rotate-[5deg] min-[1200px]:left-[8%] min-[1200px]:top-[70%] min-[1200px]:w-[min(188px,15vw)]"
       />
 
       {/* Right — 4, 5, 6 */}
       <MetricFloat
         src={HERO_METRIC_IMAGES.rightTop}
         alt=""
-        className="right-[0%] top-[1%] w-[min(150px,12vw)] rotate-[21deg] min-[1200px]:right-[2%] min-[1200px]:top-[3%] min-[1200px]:w-[min(172px,14vw)]"
+        className="right-[10%] top-[1%] w-[min(150px,12vw)] rotate-[14deg] min-[1200px]:right-[2%] min-[1200px]:-top-[2%] min-[1200px]:w-[min(172px,14vw)]"
       />
       <MetricFloat
         src={HERO_METRIC_IMAGES.rightMid}
         alt=""
-        className="right-0 top-[36%] w-[min(220px,18vw)] rotate-[6deg] min-[1200px]:right-[1%] min-[1200px]:top-[38%] min-[1200px]:w-[min(256px,22vw)]"
+        className="right-0 top-[36%] w-[min(220px,18vw)] rotate-[2deg] min-[1200px]:right-[1%] min-[1200px]:top-[32%] min-[1200px]:w-[min(256px,22vw)]"
       />
       <MetricFloat
         src={HERO_METRIC_IMAGES.rightBottom}
         alt=""
-        className="right-[0%] top-[68%] w-[min(150px,12vw)] rotate-[21deg] min-[1200px]:right-[2%] min-[1200px]:top-[70%] min-[1200px]:w-[min(172px,14vw)]"
+        className="right-[0%] top-[68%] w-[min(150px,12vw)] rotate-[11deg] min-[1200px]:right-[9%] min-[1200px]:top-[70%] min-[1200px]:w-[min(172px,14vw)]"
       />
     </div>
   );

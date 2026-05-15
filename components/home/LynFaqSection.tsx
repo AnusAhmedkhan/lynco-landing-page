@@ -1,14 +1,17 @@
 "use client";
 
+import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import Container from "@/components/Container";
-import { LYN_FAQ_ITEMS } from "@/constants/lyn-landing-content";
+import { useLynFaqItems } from "@/hooks/use-lyn-landing";
 import { lynLandingAssets } from "@/lib/lyn-landing-assets";
 
 const LynFaqSection = () => {
+  const { t } = useTranslation();
+  const faqItems = useLynFaqItems();
   const [open, setOpen] = useState(0);
 
   return (
@@ -17,21 +20,23 @@ const LynFaqSection = () => {
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
           <div>
             <h2 className="text-white flex flex-wrap items-center gap-2 text-3xl font-medium md:text-[2.6rem] md:leading-tight">
-              <span>Get all your</span>
-              <span className="lyn-gradient-text font-extrabold">questions</span>
-              <span>about</span>
+              <span>{t("lynLanding.faq.title1")}</span>
+              <span className="lyn-gradient-text font-extrabold">
+                {t("lynLanding.faq.titleAccent")}
+              </span>
+              <span>{t("lynLanding.faq.title2")}</span>
             </h2>
             <p className="text-white mt-2 text-3xl font-medium md:text-[2.6rem]">
-              Lynco answered.
+              {t("lynLanding.faq.title3")}
             </p>
           </div>
           <p className="text-white max-w-md text-lg md:text-xl">
-            Clear up any doubts before you begin.
+            {t("lynLanding.faq.aside")}
           </p>
         </div>
 
         <div className="mx-auto mt-12 max-w-4xl space-y-6">
-          {LYN_FAQ_ITEMS.map((item, i) => {
+          {faqItems.map((item, i) => {
             const isOpen = open === i;
             return (
               <div key={item.q}>
@@ -46,7 +51,11 @@ const LynFaqSection = () => {
                   </span>
                   <span className="relative mt-1 flex h-12 w-12 shrink-0 items-center justify-center">
                     <Image
-                      src={isOpen ? lynLandingAssets.faqOpenBg : lynLandingAssets.faqClosedBg}
+                      src={
+                        isOpen
+                          ? lynLandingAssets.faqOpenBg
+                          : lynLandingAssets.faqClosedBg
+                      }
                       alt=""
                       width={48}
                       height={48}

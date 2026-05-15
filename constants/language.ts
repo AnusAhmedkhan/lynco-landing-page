@@ -1,6 +1,7 @@
 export enum Language {
   EN = "en",
   ES = "es",
+  PT = "pt",
 }
 
 export interface LanguageOption {
@@ -17,6 +18,10 @@ export const LANGUAGE_OPTIONS: LanguageOption[] = [
   {
     code: Language.ES,
     label: "ES",
+  },
+  {
+    code: Language.PT,
+    label: "PT",
   },
 ] as const;
 

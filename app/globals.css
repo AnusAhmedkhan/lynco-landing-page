@@ -217,6 +217,88 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   }
 
+  .lyn-btn-subscribe {
+    background:
+      linear-gradient(91.38deg, #2e49b8 -2.18%, #6787e4 118.65%),
+      linear-gradient(0deg, #1152d5, #1152d5);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .lyn-plan-card-multi {
+    background: linear-gradient(145deg, #12192b 0%, #172345 48%, #151a32 100%);
+  }
+
+  /* Shared glass (Figma #FFFFFF1A) */
+  .lyn-glass {
+    background: #ffffff1a;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .lyn-step-badge {
+    background: #ffffff1a;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  /* App showcase tab bar (Figma 6951:13879) */
+  .lyn-showcase-tab-track {
+    background: #ffffff1a;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  /* Vertical white dotted rail between step badges */
+  .lyn-step-row {
+    align-items: stretch;
+  }
+
+  .lyn-step-rail {
+    align-items: center;
+  }
+
+  .lyn-step-connector {
+    width: 0;
+    align-self: center;
+    pointer-events: none;
+    border-left: 2px dashed #ffffff;
+  }
+
+  .lyn-step-connector--grow {
+    flex: 1 1 0%;
+    min-height: 0;
+  }
+
+  .lyn-step-bridge {
+    display: flex;
+    width: 3.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+
+  .lyn-step-connector--bridge {
+    height: 100%;
+    min-height: 2.5rem;
+  }
+
+  .lyn-showcase-tab-active {
+    background:
+      linear-gradient(91.38deg, #2e49b8 -2.18%, #6787e4 118.65%),
+      linear-gradient(0deg, #1152d5, #1152d5);
+    /* box-shadow:
+      0 4px 2px rgba(0, 0, 0, 0.25),
+      inset 0 0 7.8px 0 rgba(0, 0, 0, 1); */
+  }
+
   .lyn-login-text {
     background: linear-gradient(
       180deg,
@@ -318,8 +400,8 @@
   --color-lyn-muted: #cacaca;
   --color-lyn-border: rgba(255, 255, 255, 0.2);
   --color-lyn-card-border: rgba(255, 255, 255, 0.1);
-  --color-lyn-accent-from: #2e49b8;
-  --color-lyn-accent-to: #6787e4;
+  --color-lyn-accent-from: #1152d5;
+  --color-lyn-accent-to: #003199;
   --color-lyn-secondary: #6e90f6;
   --color-lyn-btn-from: #1152d5;
   --color-lyn-btn-to: #003199;

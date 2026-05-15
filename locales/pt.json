@@ -482,240 +482,240 @@
   },
   "lynLanding": {
     "nav": {
-      "howItWorks": "How it Works",
-      "automation": "Automation",
+      "howItWorks": "Como funciona",
+      "automation": "Automação",
       "pos": "POS",
       "app": "App",
-      "plans": "Plans",
+      "plans": "Planos",
       "faq": "FAQ",
       "downloadApp": "Download"
     },
-    "ctaLogin": "Login",
-    "ctaStart": "Start now",
-    "talkToSales": "Talk to Sales Team",
+    "ctaLogin": "Entrar",
+    "ctaStart": "Começar agora",
+    "talkToSales": "Falar com vendas",
     "hero": {
-      "taglineLine1": "You don't need to work 24/7.",
-      "taglineLine2": "But your business does.",
-      "phoneAlt": "Lynco app preview"
+      "taglineLine1": "Você não precisa trabalhar 24/7.",
+      "taglineLine2": "Mas o seu negócio precisa.",
+      "phoneAlt": "Prévia do app Lynco"
     },
     "shared": {
-      "aside": "It handles inquiries like a person, scheduling and finalizing them automatically —",
-      "asideBold": "including sending payment when necessary."
+      "aside": "Atende como uma pessoa, agenda e finaliza automaticamente —",
+      "asideBold": "incluindo o envio de pagamento quando necessário."
     },
     "automation": {
-      "title": "From initial contact to payment.",
-      "titleAccent": "Everything is automatic.",
-      "whatsappAlt": "WhatsApp automation",
+      "title": "Do primeiro contato ao pagamento.",
+      "titleAccent": "Tudo é automático.",
+      "whatsappAlt": "Automação no WhatsApp",
       "steps": [
         {
-          "title": "Customer sends message",
-          "body": "The customer makes contact via WhatsApp.",
+          "title": "Cliente envia mensagem",
+          "body": "O cliente entra em contato pelo WhatsApp.",
           "stepNumber": "01"
         },
         {
-          "title": "Automated service",
-          "body": "Understands questions, responds like a customer service representative, and suggests appointment times, 24 hours a day, 7 days a week.",
+          "title": "Atendimento automatizado",
+          "body": "Entende perguntas, responde como um atendente e sugere horários, 24 horas por dia, 7 dias por semana.",
           "stepNumber": "02"
         },
         {
-          "title": "Payment confirmed",
-          "body": "When needed, sends payment links and confirms booking automatically.",
+          "title": "Pagamento confirmado",
+          "body": "Quando necessário, envia links de pagamento e confirma o agendamento automaticamente.",
           "stepNumber": "03"
         },
         {
-          "title": "Appointment scheduled",
-          "body": "The appointment is confirmed and synced to your calendar without manual work.",
+          "title": "Agendamento confirmado",
+          "body": "O compromisso é confirmado e sincronizado na sua agenda sem trabalho manual.",
           "stepNumber": "04"
         }
       ]
     },
     "pos": {
-      "titleIntegrated": "Integrated",
+      "titleIntegrated": "Integrado",
       "titlePos": "POS",
-      "titleCard": "Card Machine",
-      "aside": "No hassle, no lengthy setup. Start automating your customer service today.",
-      "oneTimeFee": "One-time fee",
-      "featuresTitle": "Features",
-      "optionalNote": "Optional use — you can use Lynco without the card reader.",
-      "deviceAlt": "Lynco POS terminal",
+      "titleCard": "Maquininha",
+      "aside": "Sem complicação, sem configuração demorada. Comece a automatizar seu atendimento hoje.",
+      "oneTimeFee": "Taxa única",
+      "featuresTitle": "Recursos",
+      "optionalNote": "Uso opcional — você pode usar a Lynco sem a maquininha.",
+      "deviceAlt": "Terminal POS Lynco",
       "features": [
-        "Payments synchronized with Lynco",
-        "Everything is centralized in the payments tab.",
-        "Complete financial control",
-        "Simple and automatic reconciliation"
+        "Pagamentos sincronizados com a Lynco",
+        "Tudo centralizado na aba de pagamentos.",
+        "Controle financeiro completo",
+        "Conciliação simples e automática"
       ]
     },
     "showcase": {
-      "title": "Everything your business needs,",
-      "titleAccent": "all in one place.",
-      "phoneAlt": "Lynco mobile app",
-      "appStoreAlt": "Download on the App Store",
-      "googlePlayAlt": "Get it on Google Play",
+      "title": "Tudo o que seu negócio precisa,",
+      "titleAccent": "em um só lugar.",
+      "phoneAlt": "App mobile Lynco",
+      "appStoreAlt": "Baixar na App Store",
+      "googlePlayAlt": "Disponível no Google Play",
       "tabs": {
         "calendar": {
-          "label": "Calendar",
-          "eyebrow": "Full control",
-          "title": "Everything organized, in real time.",
-          "description": "Track appointments, clients, and payments directly through the app.",
+          "label": "Agenda",
+          "eyebrow": "Controle total",
+          "title": "Tudo organizado, em tempo real.",
+          "description": "Acompanhe agendamentos, clientes e pagamentos direto no app.",
           "features": [
             {
-              "title": "Organized schedule",
-              "body": "View confirmed times, reschedulings, and real-time availability."
+              "title": "Agenda organizada",
+              "body": "Veja horários confirmados, reagendamentos e disponibilidade em tempo real."
             },
             {
-              "title": "Daily overview",
-              "body": "See today's appointments and status at a glance."
+              "title": "Visão do dia",
+              "body": "Veja os compromissos e status do dia de forma rápida."
             },
             {
-              "title": "Instant notifications",
-              "body": "Get alerts when customers schedule, pay, or reschedule."
+              "title": "Notificações instantâneas",
+              "body": "Receba alertas quando clientes agendam, pagam ou reagendam."
             }
           ]
         },
         "ai": {
-          "label": "AI",
-          "eyebrow": "Smart assistant",
-          "title": "Your WhatsApp works while you sleep.",
-          "description": "AI replies, qualifies leads, and books appointments automatically.",
+          "label": "IA",
+          "eyebrow": "Assistente inteligente",
+          "title": "Seu WhatsApp trabalha enquanto você dorme.",
+          "description": "A IA responde, qualifica leads e agenda automaticamente.",
           "features": [
             {
-              "title": "24/7 responses",
-              "body": "Answer common questions instantly on WhatsApp."
+              "title": "Respostas 24/7",
+              "body": "Responda perguntas comuns instantaneamente no WhatsApp."
             },
             {
-              "title": "Lead qualification",
-              "body": "Collect the right details before handing off to your team."
+              "title": "Qualificação de leads",
+              "body": "Colete os dados certos antes de passar para sua equipe."
             },
             {
-              "title": "Handoff when needed",
-              "body": "Escalate to a human with full conversation context."
+              "title": "Transferência quando precisar",
+              "body": "Encaminhe para um humano com todo o contexto da conversa."
             }
           ]
         },
         "payments": {
-          "label": "Payments",
-          "eyebrow": "Get paid faster",
-          "title": "Payments synced with every appointment.",
-          "description": "Send links, confirm status, and reconcile without spreadsheets.",
+          "label": "Pagamentos",
+          "eyebrow": "Receba mais rápido",
+          "title": "Pagamentos sincronizados com cada agendamento.",
+          "description": "Envie links, confirme status e concilie sem planilhas.",
           "features": [
             {
-              "title": "Payment links",
-              "body": "Charge customers in chat with one tap."
+              "title": "Links de pagamento",
+              "body": "Cobre clientes no chat com um toque."
             },
             {
-              "title": "Status tracking",
-              "body": "See paid, pending, and failed payments in one place."
+              "title": "Acompanhamento de status",
+              "body": "Veja pagos, pendentes e falhos em um só lugar."
             },
             {
-              "title": "POS integration",
-              "body": "Connect in-person card payments to the same dashboard."
+              "title": "Integração com POS",
+              "body": "Conecte pagamentos presenciais ao mesmo painel."
             }
           ]
         },
         "marketing": {
           "label": "Marketing",
-          "eyebrow": "Grow on autopilot",
-          "title": "Campaigns that fill your calendar.",
-          "description": "Reach clients with offers and reminders that drive bookings.",
+          "eyebrow": "Cresça no automático",
+          "title": "Campanhas que enchem sua agenda.",
+          "description": "Alcance clientes com ofertas e lembretes que geram reservas.",
           "features": [
             {
-              "title": "Campaign builder",
-              "body": "Launch promos to segments in a few clicks."
+              "title": "Criador de campanhas",
+              "body": "Lance promoções para segmentos em poucos cliques."
             },
             {
-              "title": "Re-engagement",
-              "body": "Win back inactive clients with timed messages."
+              "title": "Reengajamento",
+              "body": "Recupere clientes inativos com mensagens programadas."
             },
             {
-              "title": "Performance view",
-              "body": "Track opens, replies, and bookings per campaign."
+              "title": "Visão de desempenho",
+              "body": "Acompanhe aberturas, respostas e agendamentos por campanha."
             }
           ]
         }
       }
     },
     "pricing": {
-      "title": "Choose the ideal",
-      "titleAccent": "plan for your business.",
-      "aside": "Get started in minutes and automate your customer service, scheduling, and billing on WhatsApp.",
-      "perMonth": "/month",
-      "subscribe": "Subscribe now",
-      "autonomousPlan": "Autonomous Plan",
-      "autonomousFor": "For 1 professional",
-      "multiPlan": "Multiprofessional Plan",
-      "multiFor": "For up to 20 professionals",
-      "mostPopular": "Most Popular",
+      "title": "Escolha o plano ideal",
+      "titleAccent": "para o seu negócio.",
+      "aside": "Comece em minutos e automatize atendimento, agendamentos e cobranças no WhatsApp.",
+      "perMonth": "/mês",
+      "subscribe": "Assinar agora",
+      "autonomousPlan": "Plano Autônomo",
+      "autonomousFor": "Para 1 profissional",
+      "multiPlan": "Plano Multiprofissional",
+      "multiFor": "Para até 20 profissionais",
+      "mostPopular": "Mais popular",
       "autonomousFeatures": [
-        "**Automated customer service** via WhatsApp powered by AI.",
-        "Unlimited **appointments**",
-        "**Intelligent solutions** based on your business.",
-        "**Integration** with calendar",
-        "Real-time customer **management**"
+        "**Atendimento automatizado** via WhatsApp com IA.",
+        "**Agendamentos** ilimitados",
+        "**Soluções inteligentes** baseadas no seu negócio.",
+        "**Integração** com agenda",
+        "**Gestão** de clientes em tempo real"
       ],
       "multiFeatures": [
-        "**Automated customer service** via WhatsApp powered by AI.",
-        "Unlimited **appointments**",
-        "**Intelligent solutions** based on your business.",
-        "**Integration** with calendar",
-        "Real-time customer **management**",
-        "**Multiple** professionals (staff)",
-        "User **permissions** (without access to **financials**)",
-        "**Automatic billing** (0% to 100%)",
-        "Automatic **reminders**",
-        "Reactivation **campaigns**",
-        "Complete payment **center**",
-        "**Reports** and metrics"
+        "**Atendimento automatizado** via WhatsApp com IA.",
+        "**Agendamentos** ilimitados",
+        "**Soluções inteligentes** baseadas no seu negócio.",
+        "**Integração** com agenda",
+        "**Gestão** de clientes em tempo real",
+        "**Vários** profissionais (equipe)",
+        "**Permissões** de usuário (sem acesso a **financeiro**)",
+        "**Cobrança automática** (0% a 100%)",
+        "**Lembretes** automáticos",
+        "**Campanhas** de reativação",
+        "Central de **pagamentos** completa",
+        "**Relatórios** e métricas"
       ]
     },
     "faq": {
-      "title1": "Get all your",
-      "titleAccent": "questions",
-      "title2": "about",
-      "title3": "Lynco answered.",
-      "aside": "Clear up any doubts before you begin.",
+      "title1": "Tire todas as suas",
+      "titleAccent": "dúvidas",
+      "title2": "sobre a",
+      "title3": "Lynco.",
+      "aside": "Esclareça tudo antes de começar.",
       "items": [
         {
-          "q": "How do I sign up for Lynco?",
-          "a": "You can create your account directly on our website. Once subscribed, simply log in to the mobile app to start managing your business."
+          "q": "Como me cadastro na Lynco?",
+          "a": "Você pode criar sua conta direto no site. Depois de assinar, é só entrar no app para começar a gerenciar seu negócio."
         },
         {
-          "q": "How much does Lynco cost?",
-          "a": "Plans start at R$497/month for the Autonomous Plan and R$997/month for the Multiprofessional Plan. See the pricing section above for included features."
+          "q": "Quanto custa a Lynco?",
+          "a": "Os planos começam em R$497/mês no Plano Autônomo e R$997/mês no Plano Multiprofissional. Veja a seção de planos acima para os recursos incluídos."
         },
         {
-          "q": "How do payments work?",
-          "a": "Lynco helps you collect payments through integrated flows on WhatsApp and the POS, with reconciliation aligned to your operation."
+          "q": "Como funcionam os pagamentos?",
+          "a": "A Lynco ajuda a receber pagamentos por fluxos integrados no WhatsApp e no POS, com conciliação alinhada à sua operação."
         },
         {
-          "q": "What happens if a payment fails?",
-          "a": "Failed payments can be retried or followed up automatically depending on your configuration, so you can recover revenue without manual chasing."
+          "q": "O que acontece se um pagamento falhar?",
+          "a": "Pagamentos falhos podem ser reprocessados ou acompanhados automaticamente conforme sua configuração, para recuperar receita sem trabalho manual."
         }
       ]
     },
     "footer": {
-      "tagline1": "Intelligent scheduling automation via WhatsApp.",
-      "tagline2": "Official Meta Business Partner.",
+      "tagline1": "Automação inteligente de agendamentos via WhatsApp.",
+      "tagline2": "Parceiro oficial Meta Business.",
       "companyName": "LYNCO TECHNOLOGIES LTDA",
       "cnpj": "CNPJ: 62.624.475/0001-06",
       "address": "Av. Paulista, 1636, Conj. 1504 – Bela Vista",
       "city": "São Paulo/SP – CEP 01320-200",
-      "downloadApp": "Download the app",
-      "product": "Product",
-      "company": "Company",
+      "downloadApp": "Baixar o app",
+      "product": "Produto",
+      "company": "Empresa",
       "legal": "Legal",
-      "copyright": "© 2026 LYNCO TECHNOLOGIES LTDA. All rights reserved.",
-      "metaPartner": "Meta Business Partner",
+      "copyright": "© 2026 LYNCO TECHNOLOGIES LTDA. Todos os direitos reservados.",
+      "metaPartner": "Parceiro Meta Business",
       "links": {
-        "features": "Features",
-        "howItWorks": "How it works",
-        "pricing": "Pricing",
+        "features": "Recursos",
+        "howItWorks": "Como funciona",
+        "pricing": "Planos",
         "faq": "FAQ",
-        "contact": "Contact Us",
+        "contact": "Contato",
         "facebook": "Facebook",
-        "linkedin": "Linkedin",
+        "linkedin": "LinkedIn",
         "twitter": "Twitter",
-        "privacy": "Privacy Policy",
-        "terms": "Terms of Use"
+        "privacy": "Política de privacidade",
+        "terms": "Termos de uso"
       },
       "appStoreAlt": "App Store",
       "googlePlayAlt": "Google Play"
