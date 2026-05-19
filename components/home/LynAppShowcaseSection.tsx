@@ -10,8 +10,8 @@ import { LynAppShowcaseGallery } from "@/components/home/LynAppShowcaseGallery";
 import { LynAppShowcaseTabs } from "@/components/home/LynAppShowcaseTabs";
 import { LynStepFeatureRow } from "@/components/home/LynStepFeatureRow";
 import {
-  useLynAppShowcaseTabs,
   type LynAppShowcaseTabId,
+  useLynAppShowcaseTabs,
 } from "@/hooks/use-lyn-landing";
 import badgeAppStore from "@/public/assets/appStore.png";
 import ChatBg from "@/public/assets/chatBg.png";
@@ -24,8 +24,7 @@ const LynAppShowcaseSection = () => {
   const tabs = useLynAppShowcaseTabs();
   const [activeTabId, setActiveTabId] =
     useState<LynAppShowcaseTabId>("calendar");
-  const activeTab =
-    tabs.find((tab) => tab.id === activeTabId) ?? tabs[0];
+  const activeTab = tabs.find((tab) => tab.id === activeTabId) ?? tabs[0];
 
   return (
     <section id="app" className="bg-lyn-bg scroll-mt-24 py-16 md:py-24">
@@ -41,7 +40,9 @@ const LynAppShowcaseSection = () => {
           </div>
           <p className="text-white max-w-md text-lg md:text-xl">
             {t("lynLanding.shared.aside")}{" "}
-            <span className="font-bold">{t("lynLanding.shared.asideBold")}</span>
+            <span className="font-bold">
+              {t("lynLanding.shared.asideBold")}
+            </span>
           </p>
         </div>
 

@@ -29,8 +29,15 @@ const LynLandingFooter = () => {
   ] as const;
 
   const legalLinks = [
-    { labelKey: "lynLanding.footer.links.privacy", href: "#" },
-    { labelKey: "lynLanding.footer.links.terms", href: "#" },
+    {
+      labelKey: "lynLanding.footer.links.privacy",
+      href: ROUTES.PRIVACY_POLICY,
+    },
+    {
+      labelKey: "lynLanding.footer.links.terms",
+      href: ROUTES.TERMS_OF_SERVICE,
+    },
+    { labelKey: "navigation.staticPages.support", href: ROUTES.SUPPORT },
   ] as const;
 
   return (

@@ -5,5 +5,5 @@ export const LYN_NAV = [
   { href: "#app", labelKey: "lynLanding.nav.app" },
   { href: "#plans", labelKey: "lynLanding.nav.plans" },
   { href: "#faq", labelKey: "lynLanding.nav.faq" },
-  { href: "#download", labelKey: "lynLanding.nav.downloadApp" },
+  // { href: "#download", labelKey: "lynLanding.nav.downloadApp" },
 ] as const;

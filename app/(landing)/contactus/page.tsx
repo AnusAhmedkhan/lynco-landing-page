@@ -1,13 +1,7 @@
-import React from "react";
+import { redirect } from "next/navigation";
 
-import ContactUsSection from "@/components/contactus/ContactUsSection";
+import { ROUTES } from "@/constants/routes";
 
-const ContactUsPage = () => {
-  return (
-    <div className="overflow-x-hidden bg-white">
-      <ContactUsSection />
-    </div>
-  );
-};
-
-export default ContactUsPage;
+export default function ContactUsRedirect() {
+  redirect(ROUTES.CONTACT);
+}

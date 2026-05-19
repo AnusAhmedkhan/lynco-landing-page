@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { Typography } from "@/components/Typography";
 import { LynLandingNavLink } from "@/components/navigation/LynLandingNavLink";
+import { Typography } from "@/components/Typography";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -26,6 +26,8 @@ interface NavItem {
 
 interface MobileNavDrawerProps {
   items: NavItem[];
+  guideItems?: NavItem[];
+  staticItems?: NavItem[];
   cta?: { href: string; labelKey: string; label?: string };
   /** LYNCO landing: dark glass drawer + in-page scroll for #hash links */
   variant?: "default" | "lyn";
@@ -33,6 +35,7 @@ interface MobileNavDrawerProps {
 
 const MobileNavDrawer = ({
   items,
+  guideItems,
   cta,
   variant = "default",
 }: MobileNavDrawerProps) => {
@@ -129,6 +132,48 @@ const MobileNavDrawer = ({
               );
             })}
           </nav>
+
+          {guideItems && guideItems.length > 0 ? (
+            <div className="border-lyn-border border-t pt-4">
+              <p className="text-lyn-muted mb-2 px-3 text-[10px] font-semibold uppercase tracking-widest">
+                {t("navigation.guidesMenu.sectionGuides")}
+              </p>
+              <nav className="flex flex-col gap-1">
+                {guideItems.map((item) => (
+                  <SheetClose asChild key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={close}
+                      className="text-lyn-muted hover:text-white rounded-md px-3 py-2 text-base font-medium"
+                    >
+                      {item.label ?? t(item.labelKey)}
+                    </Link>
+                  </SheetClose>
+                ))}
+              </nav>
+            </div>
+          ) : null}
+
+          {/* {staticItems && staticItems.length > 0 ? (
+            <div className="border-lyn-border border-t pt-4">
+              <p className="text-lyn-muted mb-2 px-3 text-[10px] font-semibold uppercase tracking-widest">
+                {t("navigation.guidesMenu.sectionPages")}
+              </p>
+              <nav className="flex flex-col gap-1">
+                {staticItems.map((item) => (
+                  <SheetClose asChild key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={close}
+                      className="text-lyn-muted hover:text-white rounded-md px-3 py-2 text-base font-medium"
+                    >
+                      {item.label ?? t(item.labelKey)}
+                    </Link>
+                  </SheetClose>
+                ))}
+              </nav>
+            </div>
+          ) : null} */}
 
           {cta && (
             <div className="mt-2">

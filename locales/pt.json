@@ -259,7 +259,21 @@
     "contactUs": "Contact Us",
     "login": "Login",
     "getStarted": "Get Started",
-    "menu": "Menu"
+    "menu": "Menu",
+    "guides": "Guias",
+    "guidesMenu": {
+      "credit": "Como Vincular Seu Cartão de Crédito",
+      "whatsapp": "Como Vincular o WhatsApp Business",
+      "connection": "Guia Completo de Conexão",
+      "sectionGuides": "Guias",
+      "sectionPages": "Páginas"
+    },
+    "staticPages": {
+      "contact": "Contato",
+      "support": "Suporte",
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Uso"
+    }
   },
   "hero": {
     "title": "Create legally-sound contracts in 2 minutes",
@@ -416,25 +430,30 @@
     }
   },
   "contact": {
-    "subtitle": "Contact Us",
-    "title": "Have something in Mind? Let's talk!",
-    "description": "Get a free consultation on your project - leave us a request on the website or contact us in any convenient way",
-    "form": {
-      "name": "Your Name*",
-      "companyName": "Company Name*",
-      "email": "Email*",
-      "inquiry": "Inquiry*",
-      "message": "Let's talk about your idea*",
-      "submitButton": "Submit",
-      "scheduleButton": "Schedule a Call",
-      "emailContact": "Also, feel free to email us at",
-      "emailAddress": "contact.snaplegal@gmail.com"
+    "eyebrow": "Contato",
+    "title": "Fale com a gente",
+    "description": "Entre em contato com a Lynco pelos canais abaixo.",
+    "intro": "Escolha o melhor canal para sua solicitação. Para assuntos técnicos e de conta, use o Suporte. Para parcerias, imprensa e outros temas, use o Contato geral.",
+    "cards": {
+      "general": {
+        "label": "Contato geral",
+        "title": "contato@lynco.com.br",
+        "description": "Parcerias, imprensa e assuntos não técnicos.",
+        "cta": "Enviar e-mail"
+      },
+      "support": {
+        "label": "Suporte",
+        "title": "Canais de suporte",
+        "description": "Ajuda técnica e dúvidas sobre conta.",
+        "ctaEmail": "E-mail de suporte",
+        "ctaWhatsApp": "WhatsApp"
+      }
     },
-    "inquiryOptions": {
-      "general": "General Question",
-      "support": "Product/Feature Request",
-      "partnership": "Partnership/Collaboration",
-      "technical": "Technical Support"
+    "company": {
+      "title": "Empresa",
+      "legalName": "Lynco Technologies Ltda",
+      "cnpj": "CNPJ 62.624.475/0001-06",
+      "email": "contato@lynco.com.br"
     }
   },
   "logoSlider": {
@@ -720,5 +739,722 @@
       "appStoreAlt": "App Store",
       "googlePlayAlt": "Google Play"
     }
+  },
+  "creditGuide": {
+    "hero": {
+      "badge": "Campanhas são enviadas via WhatsApp",
+      "title": "Como Vincular Seu Cartão de Crédito à Sua Conta",
+      "titleHighlight": "WhatsApp Business",
+      "description": "Certifique-se de que sua conta WhatsApp Business está pronta para enviar mensagens, modelos e campanhas vinculando um cartão de pagamento válido no Meta Business Manager.",
+      "requirements": {
+        "title": "Verificação do Meta Business",
+        "description": "A empresa deve completar a Verificação do Meta Business. Completar a verificação aumenta o limite diário de mensagens e permite que a empresa escale a entrega de mensagens para mais clientes."
+      }
+    },
+    "whyImportant": {
+      "title": "Por Que Isso É",
+      "titleHighlight": "Importante",
+      "description": "Antes de poder enviar campanhas do WhatsApp ou modelos de mensagens aprovados, você precisa adicionar um método de pagamento (cartão de crédito) à sua conta Meta Business. O Meta cobra pela entrega de mensagens enquanto o Lynco cobra pelas ferramentas de campanha"
+    },
+    "steps": {
+      "step1": {
+        "title": "Acesse o Meta Business Suite e Vá para Configurações de Pagamento",
+        "description": "Vá para sua página de gerenciamento do FB em:",
+        "url": "https://business.facebook.com/settings/whatsapp-business-accounts"
+      },
+      "step2": {
+        "title": "Adicionar um Método de Pagamento",
+        "description": "Clique em Adicionar Método de Pagamento para vincular um cartão de crédito ou débito que o Meta usará para cobranças de mensagens do WhatsApp.",
+        "note": "Este cartão é usado apenas para cobrança do Meta."
+      },
+      "step3": {
+        "title": "Inserir Detalhes do Cartão",
+        "description": "Digite as informações do seu cartão, endereço de cobrança e confirme os detalhes."
+      },
+      "step4": {
+        "title": "Método de Pagamento Confirmado",
+        "description": "Depois de salvo, seu cartão aparecerá nas configurações de cobrança e o envio de mensagens do WhatsApp será ativado."
+      }
+    },
+    "allSet": {
+      "title": "Tudo Pronto",
+      "message": "Sua conta está pronta e sua assinatura está ativa.",
+      "feature1": "Enviar modelos de WhatsApp aprovados",
+      "feature2": "Executar campanhas de marketing",
+      "trustTitle": "CONFIANÇA E TRANSPARÊNCIA",
+      "trustDescription": "O Lynco não revende mensagens do WhatsApp. O Meta controla todas as taxas de entrega do WhatsApp diretamente.",
+      "ctaButton": "Vincular cartão de pagamento ao WhatsApp"
+    }
+  },
+  "whatsappGuide": {
+    "hero": {
+      "badge": "Campanhas são enviadas via WhatsApp",
+      "title": "Como Vincular Sua Conta",
+      "titleHighlight": "WhatsApp Business",
+      "description": "Conecte sua conta WhatsApp Business para começar a enviar campanhas, automações e notificações via WhatsApp."
+    },
+    "whyImportant": {
+      "title": "Por Que Isso É",
+      "titleHighlight": "Importante",
+      "descriptionPrefix": "A Lynco se conecta ao WhatsApp usando o ",
+      "metaPhrase": "processo oficial do Meta.",
+      "descriptionSuffix": " Suas mensagens, dados e cobranças são gerenciados diretamente pelo Meta para máxima segurança."
+    },
+    "steps": {
+      "step1": {
+        "title": "Acesse o Meta Business Suite e Adicione o WhatsApp Business",
+        "description": "Vá para sua página de gerenciamento do Facebook e adicione sua conta WhatsApp Business."
+      },
+      "step2": {
+        "title": "Vincule Sua Conta WhatsApp Business",
+        "description": "Vincule com segurança sua conta WhatsApp Business através do Meta para que a Lynco possa gerenciar suas campanhas."
+      },
+      "step3": {
+        "title": "Confirme o Número do WhatsApp Business",
+        "description": "Informe o número de telefone associado à sua conta WhatsApp Business para finalizar a sincronização."
+      }
+    },
+    "allSet": {
+      "title": "Tudo Pronto",
+      "message": "Sua conta WhatsApp Business agora está conectada.",
+      "feature1": "Enviar modelos de WhatsApp aprovados",
+      "feature2": "Executar campanhas de marketing",
+      "trustTitle": "CONFIANÇA E TRANSPARÊNCIA",
+      "trustDescription": "A Lynco não revende mensagens do WhatsApp. O Meta controla diretamente todas as taxas de entrega do WhatsApp.",
+      "ctaButton": "Vincular WhatsApp Business"
+    }
+  },
+  "connectionGuide": {
+    "hero": {
+      "badge": "Guia Completo de Conexão",
+      "title": "Conecte Sua Conta WhatsApp Business à",
+      "titleHighlight": "Lynco",
+      "description": "Siga este guia em 14 passos para autenticar com segurança e parear sua conta WhatsApp Business com a plataforma Lynco via Meta.",
+      "requirements": {
+        "title": "Versão do App WhatsApp Business",
+        "description": "O cliente empresarial deve estar usando o App WhatsApp Business versão 2.24.17 ou posterior em seu dispositivo móvel."
+      }
+    },
+    "stepLabel": "Passo",
+    "steps": {
+      "step1": {
+        "title": "Iniciar Conexão do WhatsApp Business",
+        "description": "Vincule sua conta WhatsApp Business para gerenciar conversas de clientes diretamente pela Lynco."
+      },
+      "step2": {
+        "title": "Redirecionando para o Meta",
+        "description": "Aguarde enquanto estabelecemos uma conexão segura com os servidores do Meta (Facebook)."
+      },
+      "step3": {
+        "title": "Continuar com o Facebook",
+        "description": "Faça login usando a conta do Facebook vinculada ao seu WhatsApp Business."
+      },
+      "step4": {
+        "title": "Conectar sua conta com segurança",
+        "description": "A Lynco receberá acesso à sua conta WhatsApp Business para habilitar os recursos de mensagens."
+      },
+      "step5": {
+        "title": "Escolher Conta WhatsApp Business",
+        "description": "Escolha a conta WhatsApp Business que você deseja conectar à Lynco."
+      },
+      "step6": {
+        "title": "Selecionar a opção 'WhatsApp existente'",
+        "description": "Certifique-se de que sua conta tenha pelo menos 7 dias."
+      },
+      "step7": {
+        "title": "Inserir seu número do WhatsApp Business",
+        "description": "Garanta que esse número esteja associado ao perfil de negócio selecionado na etapa anterior."
+      },
+      "step8": {
+        "title": "Conectar à Plataforma de Negócios",
+        "description": "Verifique o WhatsApp da empresa. Você deve ter recebido uma mensagem do Facebook Business."
+      },
+      "step9": {
+        "title": "Conectar à Plataforma de Negócios",
+        "description": "Clique em \"Conectar à Plataforma de Negócios\" para continuar."
+      },
+      "step10": {
+        "title": "Compartilhar histórico de conversa",
+        "description": "Qualquer opção escolhida aqui não afetará nada dentro do nosso aplicativo."
+      },
+      "step11": {
+        "title": "Escanear QR Code ou inserir código de acesso",
+        "description": "Abra o WhatsApp Business no seu celular e escaneie este QR Code para concluir a configuração, ou insira o código de acesso."
+      },
+      "step12": {
+        "title": "Confirmar conexão com o WhatsApp",
+        "description": "Revise e confirme os dados da sua conta WhatsApp Business para finalizar a configuração."
+      },
+      "step13": {
+        "title": "Revisar",
+        "description": "Revise e confirme os dados da sua conta WhatsApp Business para finalizar a configuração."
+      },
+      "step14": {
+        "title": "Tudo Pronto!",
+        "description": "Sua conta agora está vinculada. Você já pode gerenciar todas as suas conversas de WhatsApp diretamente pela Lynco."
+      }
+    },
+    "progress": "Progresso"
+  },
+  "support": {
+    "hero": {
+      "eyebrow": "Central de Suporte",
+      "title": "Como podemos ajudar?",
+      "subtitle": "Encontre respostas rápidas ou fale diretamente com nossa equipe.",
+      "searchPlaceholder": "Pesquise sua dúvida…"
+    },
+    "contact": {
+      "title": "Fale com a gente",
+      "subtitle": "Escolha o canal mais conveniente para você.",
+      "cards": {
+        "whatsapp": {
+          "label": "Mais rápido",
+          "title": "WhatsApp",
+          "description": "Atendimento em tempo real pela nossa equipe de suporte.",
+          "cta": "Iniciar conversa"
+        },
+        "email": {
+          "label": "E-mail",
+          "title": "suporte@lynco.com.br",
+          "description": "Resposta em até 1 dia útil para questões técnicas e de conta.",
+          "cta": "Enviar e-mail"
+        },
+        "general": {
+          "label": "Contato geral",
+          "title": "contato@lynco.com.br",
+          "description": "Parcerias, imprensa e outros assuntos não relacionados ao suporte técnico.",
+          "cta": "Enviar mensagem"
+        }
+      }
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "subtitle": "Respostas para as dúvidas mais comuns sobre a plataforma.",
+      "noResults": "Nenhuma pergunta encontrada. Fale diretamente com nossa equipe pelo WhatsApp ou e-mail.",
+      "questions": [
+        "Como faço para conectar meu WhatsApp à Lynco?",
+        "A Lynco funciona com meu WhatsApp pessoal?",
+        "Como cancelar minha assinatura?",
+        "Posso alterar meu plano a qualquer momento?",
+        "Como funciona o agendamento automático?",
+        "Como enviar campanhas de reativação?",
+        "Como receber pagamentos antecipados dos clientes?",
+        "Meus dados e os dos meus clientes estão seguros?",
+        "Esqueci minha senha. Como recuperar?",
+        "A plataforma funciona para qualquer tipo de negócio?"
+      ],
+      "answers": [
+        "Após criar sua conta e ativar a assinatura, acesse as Configurações da plataforma e siga o passo a passo de integração com o WhatsApp Business API. Você precisará de um número de telefone dedicado ao negócio (não pode ser um número já vinculado ao WhatsApp pessoal).",
+        "Não. A Lynco utiliza a API oficial do WhatsApp Business (Meta), que exige um número exclusivo para a empresa. O número pessoal não pode ser usado simultaneamente com a API.",
+        "Você pode cancelar a qualquer momento diretamente em Configurações > Assinatura dentro da plataforma, ou solicitando pelo e-mail suporte@lynco.com.br. O acesso permanece ativo até o final do período já pago e não há reembolso proporcional.",
+        "Sim. Entre em contato com nossa equipe pelo WhatsApp ou e-mail de suporte e faremos a migração do seu plano. A cobrança proporcional será ajustada no próximo ciclo.",
+        "A IA da Lynco conversa com o cliente pelo WhatsApp em linguagem natural, entende o serviço desejado e verifica a disponibilidade na sua agenda. O agendamento é confirmado automaticamente e o cliente recebe lembretes antes do horário.",
+        "Acesse a seção Campanhas no painel, selecione a lista de clientes que deseja reativar, escolha o modelo de mensagem aprovado pela Meta e programe o envio. Atenção: o disparo de campanhas via WhatsApp pode gerar cobrança adicional diretamente pela Meta.",
+        "A Lynco se integra com a Pagar.me para gerar e enviar links de pagamento diretamente no WhatsApp durante o processo de agendamento. Para ativar, acesse Configurações > Pagamentos e vincule sua conta.",
+        "Sim. Adotamos criptografia em trânsito (TLS) e em repouso, controle de acesso por função (RBAC) e monitoramento contínuo de segurança. Tratamos dados em conformidade com a LGPD.",
+        "Na tela de login, clique em \"Esqueci minha senha\" e informe o e-mail cadastrado. Você receberá um link de redefinição em alguns minutos. Se não receber, verifique a pasta de spam ou entre em contato com suporte@lynco.com.br.",
+        "A Lynco foi desenvolvida para negócios de serviços com agendamentos, como clínicas, salões, estúdios, profissionais autônomos e empresas de serviços em geral. Se tiver dúvidas, fale com a gente pelo WhatsApp."
+      ]
+    },
+    "banner": {
+      "title": "Ainda com dúvidas?",
+      "subtitle": "Nossa equipe responde em minutos pelo WhatsApp.",
+      "cta": "Falar no WhatsApp"
+    }
+  },
+  "legal": {
+    "meta": {
+      "lastUpdated": "Última atualização:",
+      "effective": "Vigência:",
+      "version": "Versão:",
+      "owner": "Responsável pelo site:",
+      "contact": "Contato:",
+      "ownerValue": "Lynco Technologies Ltda — CNPJ 62.624.475/0001-06",
+      "contactValue": "contato@lynco.com.br"
+    },
+    "privacyHtml": {
+      "eyebrow": "Documento legal · LGPD",
+      "title": "Política de Privacidade",
+      "description": "Saiba como coletamos, usamos e protegemos seus dados pessoais, em conformidade com a LGPD.",
+      "meta": {
+        "effectiveLabel": "Vigência:",
+        "effectiveValue": "17 de abril de 2026",
+        "versionLabel": "Versão:",
+        "versionValue": "1.0",
+        "companyLabel": "Empresa:",
+        "companyValue": "LYNCO TECHNOLOGIES LTDA"
+      },
+      "nav": {
+        "who": "Quem somos",
+        "definitions": "Definições",
+        "data": "Dados coletados",
+        "purposes": "Finalidades e bases legais",
+        "sharing": "Compartilhamento",
+        "retention": "Retenção e descarte",
+        "rights": "Direitos dos titulares",
+        "security": "Segurança",
+        "cookies": "Cookies",
+        "transfer": "Transferência internacional",
+        "minors": "Menores de idade",
+        "changes": "Alterações",
+        "contact": "Contato e DPO"
+      },
+      "sections": {
+        "who": {
+          "title": "Quem somos",
+          "paragraphs": [
+            "A LYNCO TECHNOLOGIES LTDA (CNPJ: 62.624.475/0001-06) é uma empresa de tecnologia que desenvolve e opera a plataforma Lynco, uma solução SaaS (Software as a Service) voltada à automação de atendimento via WhatsApp para negócios de serviços.",
+            "A Lynco atua como assistente digital inteligente, operando em nome dos negócios contratantes por meio de linguagem natural, com integração à API oficial do WhatsApp Business (Meta). Seus serviços incluem agendamentos, lembretes automáticos, campanhas de reativação e recebimento de pagamentos antecipados."
+          ]
+        },
+        "definitions": {
+          "title": "Definições",
+          "intro": "Para fins desta Política, aplicam-se as seguintes definições conforme a LGPD (Lei nº 13.709/2018):",
+          "items": [
+            {
+              "term": "Dado Pessoal",
+              "desc": "Qualquer informação relacionada a pessoa natural identificada ou identificável."
+            },
+            {
+              "term": "Titular",
+              "desc": "Pessoa natural a quem se referem os dados pessoais."
+            },
+            {
+              "term": "Controlador",
+              "desc": "Pessoa natural ou jurídica que toma as decisões sobre o tratamento de dados. No caso dos dados de Usuários, a LYNCO TECHNOLOGIES LTDA."
+            },
+            {
+              "term": "Operador",
+              "desc": "Pessoa natural ou jurídica que realiza o tratamento em nome do controlador."
+            },
+            {
+              "term": "Usuário",
+              "desc": "Empresa ou profissional que contrata e usa a plataforma Lynco."
+            },
+            {
+              "term": "Cliente Final",
+              "desc": "Pessoa natural atendida via WhatsApp pelo sistema automatizado da Lynco, em nome do Usuário."
+            },
+            {
+              "term": "DPO / Encarregado",
+              "desc": "Responsável pelo canal de comunicação entre controlador, titulares e a ANPD."
+            },
+            {
+              "term": "Tratamento",
+              "desc": "Toda operação realizada com dados pessoais: coleta, uso, acesso, armazenamento, eliminação, comunicação, entre outras."
+            }
+          ]
+        },
+        "data": {
+          "title": "Dados coletados",
+          "userDataTitle": "3.1 Dados dos Usuários da plataforma",
+          "userDataIntro": "Ao criar conta e utilizar a plataforma Lynco, coletamos:",
+          "userDataList": [
+            "Nome completo",
+            "Endereço de e-mail",
+            "Número de telefone",
+            "Nome do negócio",
+            "Credenciais de acesso (e-mail e senha criptografada)",
+            "Dados de cobrança e assinatura (processados via Pagar.me)",
+            "Dados de uso e navegação na plataforma (logs de acesso, funcionalidades utilizadas)"
+          ],
+          "finalCustomerTitle": "3.2 Dados dos Clientes Finais (processados em nome do Usuário)",
+          "finalCustomerIntro": "No âmbito da operação da plataforma, a Lynco processa, em nome dos Usuários, dados de seus clientes finais, incluindo:",
+          "finalCustomerList": [
+            "Nome",
+            "Número de telefone (WhatsApp)",
+            "Conteúdo das mensagens trocadas com o sistema automatizado",
+            "Informações de agendamentos (data, horário, serviço contratado)",
+            "Dados de pagamento antecipado (quando aplicável, processados via Pagar.me)"
+          ],
+          "importantNote": "Importante: Em relação aos dados de clientes finais, a Lynco atua como operadora e o Usuário é o controlador responsável pela base legal e pelo relacionamento com seus próprios clientes."
+        },
+        "purposes": {
+          "title": "Finalidades e bases legais do tratamento",
+          "intro": "O tratamento de dados pela Lynco é realizado com as seguintes finalidades e bases legais (art. 7º da LGPD):",
+          "tableHeaders": [
+            "Finalidade",
+            "Dados utilizados",
+            "Base legal (LGPD)"
+          ],
+          "tableRows": [
+            [
+              "Prestação dos serviços da plataforma",
+              "Dados cadastrais, dados de uso",
+              "Execução de contrato (art. 7º, V)"
+            ],
+            [
+              "Agendamentos e automação de atendimento",
+              "Dados de clientes finais, mensagens",
+              "Legítimo interesse / Execução de contrato (art. 7º, V e IX)"
+            ],
+            [
+              "Envio de lembretes e confirmações automáticas",
+              "Telefone, dados de agendamento",
+              "Legítimo interesse / Consentimento"
+            ],
+            [
+              "Campanhas de reativação",
+              "Telefone, histórico de atendimento",
+              "Consentimento (art. 7º, I)"
+            ],
+            [
+              "Cobrança de assinaturas e pagamentos",
+              "Dados de pagamento",
+              "Execução de contrato / Obrigação legal"
+            ],
+            [
+              "Notificações push (OneSignal)",
+              "Token de dispositivo",
+              "Consentimento / Legítimo interesse"
+            ],
+            [
+              "Segurança e prevenção de fraude",
+              "IP, logs de acesso",
+              "Legítimo interesse (art. 7º, IX)"
+            ],
+            [
+              "Cumprimento de obrigações legais",
+              "Conforme exigência legal",
+              "Obrigação legal (art. 7º, II)"
+            ]
+          ]
+        },
+        "sharing": {
+          "title": "Compartilhamento com terceiros",
+          "intro": "A Lynco não comercializa dados pessoais. O compartilhamento ocorre exclusivamente com parceiros essenciais à operação da plataforma:",
+          "tableHeaders": [
+            "Parceiro",
+            "Finalidade"
+          ],
+          "tableRows": [
+            [
+              "Meta (WhatsApp Business API)",
+              "Envio e recebimento de mensagens via WhatsApp, conforme os Termos de Serviço da Meta para a API Business."
+            ],
+            [
+              "Pagar.me",
+              "Processamento de pagamentos de assinaturas e envio de links de cobrança em nome dos Usuários."
+            ],
+            [
+              "OneSignal",
+              "Envio de notificações push para usuários da plataforma."
+            ],
+            [
+              "Infraestrutura em nuvem",
+              "Armazenamento e processamento de dados em servidores seguros de terceiros (provedores cloud)."
+            ]
+          ],
+          "footer": "Todos os parceiros são contratualmente obrigados a tratar dados pessoais em conformidade com a LGPD e demais legislações aplicáveis."
+        },
+        "retention": {
+          "title": "Retenção e descarte de dados",
+          "intro": "Os dados pessoais são retidos pelo período necessário para as finalidades descritas nesta Política:",
+          "tableHeaders": [
+            "Categoria",
+            "Prazo de retenção"
+          ],
+          "tableRows": [
+            [
+              "Dados cadastrais e operacionais dos Usuários",
+              "Vigência do contrato + 5 anos (obrigações legais e tributárias)"
+            ],
+            [
+              "Dados de clientes finais (agendamentos, mensagens)",
+              "Conforme configuração do Usuário (máx. 2 anos)"
+            ],
+            [
+              "Logs de acesso",
+              "6 meses (Marco Civil da Internet – Lei nº 12.965/2014)"
+            ],
+            [
+              "Dados de pagamento",
+              "Conforme legislação fiscal e financeira aplicável"
+            ]
+          ],
+          "footer": "Após o término do prazo de retenção, os dados são eliminados de forma segura ou anonimizados, salvo obrigação legal de guarda."
+        },
+        "rights": {
+          "title": "Direitos dos titulares",
+          "intro": "Nos termos dos artigos 17 a 22 da LGPD, você tem os seguintes direitos em relação aos seus dados pessoais:",
+          "list": [
+            "Confirmação da existência de tratamento dos seus dados pessoais",
+            "Acesso aos dados pessoais tratados",
+            "Correção de dados incompletos, inexatos ou desatualizados",
+            "Anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade com a LGPD",
+            "Portabilidade dos dados a outro fornecedor, mediante requisição",
+            "Eliminação dos dados tratados com base no consentimento",
+            "Informação sobre entidades com quem a Lynco compartilhou seus dados",
+            "Revogação do consentimento a qualquer momento",
+            "Oposição ao tratamento realizado com base em legítimo interesse"
+          ],
+          "infoCard": "Para exercer seus direitos, envie solicitação para privacidade@lynco.com.br. O prazo de resposta é de até 15 dias corridos."
+        },
+        "security": {
+          "title": "Segurança da informação",
+          "intro": "A Lynco adota medidas técnicas e organizacionais para proteger os dados pessoais contra acesso não autorizado, destruição, perda ou qualquer forma de tratamento inadequado:",
+          "list": [
+            "Criptografia de senhas e dados sensíveis em trânsito (TLS) e em repouso (AES-256)",
+            "Controle de acesso baseado em funções (RBAC)",
+            "Monitoramento de logs e detecção de anomalias",
+            "Plano de resposta a incidentes de segurança",
+            "Avaliações periódicas de vulnerabilidades"
+          ],
+          "footer": "Em caso de incidente de segurança que possa acarretar risco relevante aos titulares, a Lynco notificará a ANPD e os titulares afetados no prazo de até 72 horas após a ciência do incidente."
+        },
+        "cookies": {
+          "title": "Cookies e tecnologias de rastreamento",
+          "intro": "A plataforma web da Lynco pode utilizar cookies e tecnologias similares para:",
+          "list": [
+            "Manter sessões de usuário autenticadas",
+            "Analisar o desempenho e o uso da plataforma",
+            "Garantir a segurança da navegação"
+          ],
+          "footer": "Você pode gerenciar as preferências de cookies nas configurações do seu navegador. A desabilitação de cookies essenciais pode comprometer o funcionamento da plataforma."
+        },
+        "transfer": {
+          "title": "Transferência internacional de dados",
+          "paragraphs": [
+            "O uso da API do WhatsApp Business (Meta) e dos demais serviços terceirizados pode implicar a transferência de dados pessoais para servidores localizados fora do Brasil.",
+            "Tais transferências são realizadas em conformidade com o art. 33 da LGPD, garantindo-se que os países ou organizações destinatárias proporcionem grau de proteção de dados pessoais adequado ao previsto na legislação brasileira, por meio de instrumentos de conformidade disponibilizados pelos parceiros internacionais."
+          ]
+        },
+        "minors": {
+          "title": "Menores de idade",
+          "paragraphs": [
+            "A plataforma Lynco é destinada exclusivamente a profissionais e empresas. Não coletamos intencionalmente dados pessoais de menores de 18 anos.",
+            "Caso constatemos o tratamento indevido de dados de menores, tomaremos as medidas necessárias para eliminar tais dados de nossas bases."
+          ]
+        },
+        "changes": {
+          "title": "Alterações desta Política",
+          "paragraphs": [
+            "Esta Política pode ser atualizada periodicamente para refletir mudanças na legislação, nos nossos serviços ou nas práticas de privacidade.",
+            "Alterações relevantes serão comunicadas ao Usuário por e-mail ou notificação na plataforma com antecedência mínima de 15 dias da entrada em vigor. A continuidade do uso da plataforma após a comunicação implica aceitação da versão atualizada."
+          ]
+        },
+        "contact": {
+          "title": "Contato e Encarregado (DPO)",
+          "intro": "Dúvidas, solicitações de exercício de direitos ou comunicações relacionadas a esta Política devem ser encaminhadas ao Encarregado pelo Tratamento de Dados (DPO):",
+          "cards": {
+            "dpoEmailLabel": "E-mail (DPO)",
+            "dpoEmailHref": "mailto:privacidade@lynco.com.br",
+            "dpoEmailValue": "privacidade@lynco.com.br",
+            "companyLabel": "Empresa",
+            "companyValue": "LYNCO TECHNOLOGIES LTDA",
+            "cnpjLabel": "CNPJ",
+            "cnpjValue": "62.624.475/0001-06",
+            "addressLabel": "Endereço",
+            "addressValue": "Av. Paulista, 1636, Conj. 1504\nBela Vista – São Paulo/SP\nCEP 01320-200",
+            "anpdLabel": "Autoridade Nacional de Proteção de Dados (ANPD)",
+            "anpdHref": "https://www.gov.br/anpd",
+            "anpdHrefLabel": "www.gov.br/anpd",
+            "anpdSuffix": "— caso sua solicitação não seja atendida adequadamente."
+          }
+        }
+      }
+    },
+    "privacyPrelaunch": {
+      "title": "Política de Privacidade",
+      "description": "Saiba como coletamos, usamos e protegemos seus dados pessoais.",
+      "meta": {
+        "lastUpdated": "Última atualização: 23 de setembro de 2025",
+        "controllingCompany": "Empresa controladora: Lynco Technologies Ltda — CNPJ 62.624.475/0001-06",
+        "address": "Endereço: Rua 1822, nº 400, sala 902 Box 02, Centro, Balneário Camboriú – SC, CEP 88330-484",
+        "dpoContact": "Contato do Controlador/DPO: contato@lynco.com.br"
+      },
+      "scope": {
+        "title": "Escopo (pré-lançamento)",
+        "body": "Antes do lançamento público do app, coletamos apenas os dados necessários para:",
+        "bullets": [
+          "Informações de contato e interesse (ex.: nome, e-mail) enviadas pelo formulário do site;",
+          "Comunicações anteriores relacionadas ao produto (lista de espera, novidades e convites de teste);",
+          "Dados técnicos mínimos para navegação no site (logs e cookies essenciais/analytics, quando habilitados)."
+        ],
+        "footer": "Não coletamos dados sensíveis nem processamos transações financeiras no site nesta etapa."
+      },
+      "dataCollect": {
+        "title": "Dados que coletamos",
+        "bullets": [
+          "Fornecidos por você: nome, e-mail, empresa (se informada) e conteúdo da mensagem.",
+          "Gerados automaticamente: endereço IP, data/hora, user-agent, páginas visitadas, eventos básicos de navegação.",
+          "Cookies e tecnologias similares: apenas os estritamente necessários para o funcionamento do site. Opcionalmente, cookies de analytics e anúncios/remarketing somente com seu consentimento via banner (quando habilitado)."
+        ]
+      },
+      "purposes": {
+        "title": "Finalidades e base legal (LGPD)",
+        "bullets": [
+          "Tratamento de contatos e interesse comercial (art. 7º, V – execução de procedimentos preliminares; e art. 7º, IX – legítimo interesse, com teste de balanceamento).",
+          "Envio de comunicações sobre o produto (art. 7º, I – consentimento; você pode revogar a qualquer momento).",
+          "Segurança e prevenção à fraude (art. 7º, IX – legítimo interesse).",
+          "Analytics (art. 7º, I – consentimento, quando habilitado)."
+        ]
+      },
+      "sharing": {
+        "title": "Compartilhamento",
+        "body": "Podemos utilizar processadores (operadores) para:",
+        "bullets": [
+          "Hospedagem e infraestrutura, e-mail/CRM, analytics e ferramentas de verificação de domínio (ex.: verificação de domínio do Meta)."
+        ],
+        "footer": "Todos atuam sob contrato e somente conforme nossas instruções. Não vendemos dados."
+      },
+      "internationalTransfers": {
+        "title": "Transferências internacionais",
+        "body": "Fornecedores de serviços podem estar fora do Brasil. Nesses casos, adotamos salvaguardas adequadas (contratuais e organizacionais) conforme a LGPD."
+      },
+      "retention": {
+        "title": "Retenção",
+        "bullets": [
+          "Contato/lista de espera: até a retirada do consentimento ou 24 meses após o último contato útil, o que ocorrer primeiro.",
+          "Logs de acesso: conforme os prazos legais de retenção."
+        ]
+      },
+      "rights": {
+        "title": "Seus direitos (titular de dados)",
+        "body": "Acesso, correção, portabilidade, anonimização, bloqueio, exclusão, informação sobre compartilhamento, oposição e revogação do consentimento.",
+        "footer": "Solicite via e-mail contato@lynco.com.br."
+      },
+      "cookies": {
+        "title": "Cookies e preferências de rastreamento",
+        "body": "Quando analytics/anúncios estiverem ativos, exibiremos um banner de consentimento para aceitar/rejeitar categorias. Você pode alterar isso a qualquer momento pelo link “Preferências de Cookies” no rodapé (quando disponível)."
+      },
+      "children": {
+        "title": "Crianças e adolescentes",
+        "body": "Este website não é destinado a menores. Não coletamos intencionalmente dados de crianças."
+      },
+      "security": {
+        "title": "Segurança",
+        "body": "Controles técnicos e organizacionais proporcionais (criptografia em trânsito, restrição de acesso, registro e auditoria). Nenhum sistema é 100% inviolável."
+      },
+      "contact": {
+        "title": "Contato e reclamações",
+        "bullets": [
+          "Controlador/DPO: contato@lynco.com.br",
+          "ANPD: conforme os canais oficiais da Autoridade Nacional de Proteção de Dados.",
+          "Consumidor: procure órgãos de defesa do consumidor e adote as medidas legais cabíveis."
+        ]
+      },
+      "updates": {
+        "title": "Atualizações desta Política",
+        "body": "Publicaremos versões atualizadas nesta página e indicaremos a data da última modificação. Alterações relevantes podem exigir novo consentimento."
+      }
+    },
+    "terms": {
+      "eyebrow": "Documento legal",
+      "title": "Termos de Serviço",
+      "description": "Termos aplicáveis ao website institucional da Lynco (pré-lançamento).",
+      "lastUpdated": "23 de setembro de 2025",
+      "nav": {
+        "scope": "Escopo (pré-lançamento)",
+        "content": "Conteúdo do site",
+        "ip": "Propriedade intelectual",
+        "use": "Uso permitido",
+        "noOffer": "Ausência de oferta/contrato",
+        "liability": "Limitação de responsabilidade",
+        "privacy": "Privacidade",
+        "changes": "Alterações",
+        "official": "Comunicação oficial",
+        "jurisdiction": "Legislação e foro"
+      },
+      "sections": {
+        "scope": {
+          "title": "Escopo (pré-lançamento)",
+          "body": "Este website é institucional e serve para apresentar a Lynco e coletar interesse (lista de espera). O SaaS ainda não foi lançado ao público; não há contratação ou pagamento pelo site nesta fase."
+        },
+        "content": {
+          "title": "Conteúdo do site",
+          "body": "Conteúdos informativos podem ser atualizados sem aviso prévio. Links de terceiros possuem suas próprias políticas; a Lynco não se responsabiliza por conteúdo externo."
+        },
+        "ip": {
+          "title": "Propriedade intelectual",
+          "body": "Marcas, logotipos, nomes comerciais, layouts e outros ativos exibidos pertencem à Lynco Technologies Ltda ou a seus licenciadores. Não é permitido copiar, modificar, distribuir ou realizar engenharia reversa."
+        },
+        "use": {
+          "title": "Uso permitido",
+          "bodyIntro": "Você concorda em:",
+          "bullets": {
+            "lawful": "Usar o site de forma lícita;",
+            "stability": "Não interferir na segurança/estabilidade;",
+            "unauthorized": "Não tentar acessar áreas restritas sem autorização."
+          }
+        },
+        "noOffer": {
+          "title": "Ausência de oferta/contrato",
+          "body": "Durante o período de pré-lançamento, não há vendas ou assinaturas pelo site. Planos, preços e contratos serão apresentados após o lançamento, em ambiente dedicado."
+        },
+        "liability": {
+          "title": "Limitação de responsabilidade",
+          "body": "O website é fornecido “no estado em que se encontra”. A Lynco não se responsabiliza por: indisponibilidades temporárias, erros causados por terceiros (provedores, internet) ou perdas indiretas/expectativas de resultados. Isso não exclui direitos do consumidor quando aplicável."
+        },
+        "privacy": {
+          "title": "Privacidade",
+          "body": "O uso deste website está sujeito à Política de Privacidade (parte integrante destes Termos). Quando necessário, coletaremos consentimento para cookies/analytics."
+        },
+        "changes": {
+          "title": "Alterações",
+          "body": "Podemos alterar estes Termos a qualquer momento. A data da última atualização será indicada nesta página."
+        },
+        "official": {
+          "title": "Comunicação oficial",
+          "body": "contato@lynco.com.br é o canal oficial. Mensagens via redes sociais não constituem atendimento formal."
+        },
+        "jurisdiction": {
+          "title": "Legislação e foro",
+          "body": "Regidos pelas leis do Brasil. Foro de Balneário Camboriú/SC, salvo quando o consumidor tiver o direito de escolher seu domicílio."
+        }
+      },
+      "lastUpdatedPrefix": "Última atualização:"
+    },
+    "privacy": {
+      "eyebrow": "Documento legal · LGPD",
+      "title": "Política de Privacidade",
+      "effective": "17 de abril de 2026",
+      "version": "1.0",
+      "nav": {
+        "whoWeAre": "Quem somos",
+        "dataCollected": "Dados coletados",
+        "sharing": "Compartilhamento",
+        "rights": "Seus direitos",
+        "security": "Segurança",
+        "contact": "Contato"
+      },
+      "sections": {
+        "who": {
+          "title": "Quem somos",
+          "body": "A Lynco Technologies Ltda (CNPJ: 62.624.475/0001-06) desenvolve e opera a plataforma Lynco, uma solução SaaS voltada à automação de atendimento via WhatsApp para negócios de serviços."
+        },
+        "data": {
+          "title": "Dados coletados",
+          "body": "Tratamos dados para fornecer e melhorar a plataforma. Dependendo do uso, podemos coletar:",
+          "bullets": {
+            "account": "Dados de conta (nome, e-mail, telefone, nome do negócio);",
+            "usage": "Dados de uso e navegação (logs, funcionalidades acessadas);",
+            "whatsapp": "Dados de interação via WhatsApp tratados para os usuários (mensagens e informações de agendamento);",
+            "payments": "Dados de cobrança e pagamento processados por provedores de pagamento (quando aplicável)."
+          }
+        },
+        "sharing": {
+          "title": "Compartilhamento",
+          "body": "Não vendemos dados pessoais. Podemos compartilhar dados com parceiros essenciais (ex.: WhatsApp/Meta, processadores de pagamento, provedores de notificação e infraestrutura em nuvem) para operar os serviços, com salvaguardas legais e contratuais."
+        },
+        "rights": {
+          "title": "Seus direitos",
+          "body": "Você pode solicitar confirmação, acesso, correção, portabilidade, eliminação (quando aplicável) e demais direitos previstos na LGPD. Solicitações podem ser feitas pelo contato abaixo."
+        },
+        "security": {
+          "title": "Segurança",
+          "body": "Adotamos medidas técnicas e organizacionais para proteger dados pessoais contra acessos não autorizados, perdas ou tratamentos inadequados."
+        },
+        "contact": {
+          "title": "Contato",
+          "body": "Para solicitações e dúvidas relacionadas à privacidade, utilize nosso canal de privacidade.",
+          "emailLabel": "E-mail:"
+        }
+      }
+    },
+    "pageNavLabel": "Nesta página"
+  },
+  "guides": {
+    "stepPrefix": "PASSO"
   }
 }

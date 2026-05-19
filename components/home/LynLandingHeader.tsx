@@ -5,8 +5,10 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 import Container from "@/components/Container";
-import MobileNavDrawer from "@/components/navigation/MobileNavDrawer";
+import GuidesNavDropdown from "@/components/navigation/GuidesNavDropdown";
 import { LynLandingNavLink } from "@/components/navigation/LynLandingNavLink";
+import MobileNavDrawer from "@/components/navigation/MobileNavDrawer";
+import { GUIDE_NAV_ITEMS } from "@/constants/guides-nav";
 import { LYN_NAV } from "@/constants/lyn-landing-content";
 import { APP_ROUTES } from "@/constants/routes";
 import { lynLandingAssets } from "@/lib/lyn-landing-assets";
@@ -18,7 +20,10 @@ const LynLandingHeader = () => {
     <header className="bg-lyn-bg sticky top-0 z-50 border-b border-lyn-border/40">
       <Container size="xl" className="py-4">
         <div className="relative flex items-center justify-between gap-4">
-          <Link href="/home" className="relative z-10 flex shrink-0 items-center">
+          <Link
+            href="/home"
+            className="relative z-10 flex shrink-0 items-center"
+          >
             <Image
               src={lynLandingAssets.logo}
               alt="Lynco"
@@ -38,6 +43,7 @@ const LynLandingHeader = () => {
                 className="text-white whitespace-nowrap hover:text-lyn-muted"
               />
             ))}
+            <GuidesNavDropdown />
           </nav>
 
           <div className="relative z-10 ml-auto flex items-center gap-3">
@@ -60,6 +66,7 @@ const LynLandingHeader = () => {
                   href: item.href,
                   labelKey: item.labelKey,
                 }))}
+                guideItems={GUIDE_NAV_ITEMS}
                 cta={{
                   href: APP_ROUTES.SIGNUP,
                   labelKey: "lynLanding.ctaStart",
