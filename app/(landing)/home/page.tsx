@@ -1,5 +1,7 @@
 "use client";
 
+import Container from "@/components/Container";
+import { LynAppShowcaseGallery } from "@/components/home/LynAppShowcaseGallery";
 import LynAppShowcaseSection from "@/components/home/LynAppShowcaseSection";
 import LynAutomationSection from "@/components/home/LynAutomationSection";
 import LynFaqSection from "@/components/home/LynFaqSection";
@@ -16,6 +18,10 @@ export default function LandingPage() {
       <LynAutomationSection />
       <LynPosSection />
       <LynAppShowcaseSection />
+      <Container size="xl">
+        <LynAppShowcaseGallery />
+      </Container>
+
       <LynPricingSection />
       <LynFaqSection />
     </div>

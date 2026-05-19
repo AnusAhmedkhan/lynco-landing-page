@@ -664,6 +664,18 @@
       "multiPlan": "Plano Multiprofissional",
       "multiFor": "Para até 20 profissionais",
       "mostPopular": "Mais popular",
+      "leftFeatures": [
+        "**Agendamentos** ilimitados",
+        "**Integração** com agenda",
+        "**Gestão** de clientes em tempo real",
+        "**Campanhas** de reativação"
+      ],
+      "rightFeatures": [
+        "**Atendimento automatizado** via WhatsApp com IA.",
+        "**Soluções inteligentes** baseadas no seu negócio.",
+        "**Lembretes** automáticos",
+        "**Relatórios** e métricas"
+      ],
       "autonomousFeatures": [
         "**Atendimento automatizado** via WhatsApp com IA.",
         "**Agendamentos** ilimitados",

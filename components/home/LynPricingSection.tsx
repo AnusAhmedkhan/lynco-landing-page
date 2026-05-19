@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
@@ -8,7 +7,6 @@ import Container from "@/components/Container";
 import { LynPlanBadge } from "@/components/home/LynPlanBadge";
 import { APP_ROUTES } from "@/constants/routes";
 import { useLynPricingFeatures } from "@/hooks/use-lyn-landing";
-import ChatBg from "@/public/assets/chatBg.png";
 
 function formatFeature(line: string) {
   const parts = line.split(/\*\*(.*?)\*\*/g);
@@ -23,10 +21,23 @@ function formatFeature(line: string) {
   );
 }
 
+function FeatureList({ items }: { items: string[] }) {
+  return (
+    <ul className="text-white space-y-3 text-base sm:space-y-3.5 sm:text-lg">
+      {items.map((line, idx) => (
+        <li key={idx} className="flex gap-3">
+          <PlanDot />
+          <span className="leading-relaxed">{formatFeature(line)}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 const LynPricingSection = () => {
   const { t } = useTranslation();
-  const autonomousFeatures = useLynPricingFeatures("autonomous");
-  const multiFeatures = useLynPricingFeatures("multi");
+  const leftFeatures = useLynPricingFeatures("left");
+  const rightFeatures = useLynPricingFeatures("right");
 
   return (
     <section id="plans" className="bg-lyn-bg scroll-mt-24 py-16 md:py-24">
@@ -45,101 +56,41 @@ const LynPricingSection = () => {
           </p>
         </div>
 
-        <div className="mt-12 grid items-start gap-8 lg:grid-cols-2 lg:items-center">
-          <div className="border-lyn-border relative min-h-[640px] overflow-hidden rounded-[32px] border lg:self-center">
-            <div className="bg-lyn-surface absolute inset-0" aria-hidden />
-            <Image
-              src={ChatBg.src}
-              alt=""
-              fill
-              className="object-cover"
-              sizes="(max-width:1024px) 100vw, 50vw"
-            />
-            <div className="relative z-10 flex min-h-[640px] flex-col p-8 md:p-10">
+        <div className="border-lyn-card-border relative mt-12 overflow-hidden rounded-[28px] border sm:rounded-[32px] lg:rounded-[40px]">
+          <div className="lyn-section-plan-bg absolute inset-0" aria-hidden />
+          <div className="relative z-10 grid grid-cols-1 gap-6 p-6 sm:p-8 lg:grid-cols-[minmax(0,42%)_minmax(0,58%)] lg:grid-rows-[auto_1fr] lg:items-start lg:gap-x-10 lg:gap-y-8 lg:p-10 xl:gap-x-14 xl:p-12">
+            <div className="order-1 flex flex-col lg:col-start-1 lg:row-start-1">
               <LynPlanBadge variant="multipro" className="w-fit">
                 {t("lynLanding.pricing.autonomousPlan")}
               </LynPlanBadge>
-              <div className="text-white mt-6">
-                <span className="text-5xl font-semibold">R$497 </span>
-                <span className="text-lyn-muted text-xl font-light">
+              <div className="text-white mt-5 md:mt-6">
+                <span className="text-4xl font-semibold tracking-tight sm:text-5xl">
+                  R$497{" "}
+                </span>
+                <span className="text-lyn-muted text-lg font-light sm:text-xl">
                   {t("lynLanding.pricing.perMonth")}
                 </span>
               </div>
-              <p className="text-lyn-muted mt-1 text-xl font-light">
+              <p className="text-lyn-muted mt-1 text-base font-light sm:text-xl">
                 {t("lynLanding.pricing.autonomousFor")}
               </p>
-              <ul className="text-white mt-8 flex-1 space-y-4 text-lg">
-                {autonomousFeatures.map((line, idx) => (
-                  <li key={`a-${idx}`} className="flex gap-3">
-                    <GradientDot />
-                    <span className="leading-relaxed">
-                      {formatFeature(line)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+            </div>
+
+            <div className="order-2 flex justify-end lg:col-start-2 lg:row-start-1 lg:pt-[4.5rem]">
               <Link
                 href={APP_ROUTES.SIGNUP}
-                className="lyn-btn-subscribe mt-10 flex h-14 items-center justify-center rounded-xl text-center text-lg font-medium text-white"
+                className="lyn-btn-subscribe inline-flex h-12 w-fit min-w-[168px] items-center justify-center rounded-xl px-8 text-center text-base font-medium text-white sm:h-[52px] sm:min-w-[180px] sm:px-10 sm:text-lg"
               >
                 {t("lynLanding.pricing.subscribe")}
               </Link>
             </div>
-          </div>
 
-          <div className="border-lyn-card-border relative min-h-[720px] overflow-hidden rounded-[44px] border shadow-[0_0_36px_rgba(255,255,255,0.12)]">
-            <div className="lyn-plan-card-multi absolute inset-0" aria-hidden />
-            <Image
-              src="/assets/planShadow.png"
-              alt=""
-              width={400}
-              height={280}
-              className="pointer-events-none absolute left-0  z-[1] h-auto max-w-none object-contain object-right-top  sm:top-0"
-              priority
-            />
-            <Image
-              src="/assets/stars.png"
-              alt=""
-              width={160}
-              height={120}
-              className="pointer-events-none absolute right-5 top-5 z-[2] h-auto w-[min(38%,140px)] object-contain object-right-top md:right-8 md:top-6"
-            />
-            <LynPlanBadge
-              variant="black"
-              iconSrc="/assets/social/tick-circle.png"
-              className="absolute right-6 top-5 z-20 w-fit sm:right-8 sm:top-6"
-            >
-              {t("lynLanding.pricing.mostPopular")}
-            </LynPlanBadge>
-            <div className="relative z-10 flex min-h-[720px] flex-col p-8 pt-14 md:p-10 md:pt-16">
-              <LynPlanBadge variant="multipro" className="w-fit">
-                {t("lynLanding.pricing.multiPlan")}
-              </LynPlanBadge>
-              <div className="text-white mt-6">
-                <span className="text-5xl font-semibold">R$997 </span>
-                <span className="text-lyn-muted text-xl font-light">
-                  {t("lynLanding.pricing.perMonth")}
-                </span>
-              </div>
-              <p className="text-lyn-muted mt-1 text-xl font-light">
-                {t("lynLanding.pricing.multiFor")}
-              </p>
-              <ul className="text-white mt-8 flex-1 space-y-3 text-base md:text-lg">
-                {multiFeatures.map((line, idx) => (
-                  <li key={`m-${idx}`} className="flex gap-3">
-                    <GradientDot />
-                    <span className="leading-relaxed">
-                      {formatFeature(line)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href={APP_ROUTES.SIGNUP}
-                className="lyn-btn-subscribe mt-10 flex h-14 items-center justify-center rounded-xl text-center text-lg font-medium text-white"
-              >
-                {t("lynLanding.pricing.subscribe")}
-              </Link>
+            <div className="order-3 lg:col-start-1 lg:row-start-2">
+              <FeatureList items={leftFeatures} />
+            </div>
+
+            <div className="order-4 lg:col-start-2 lg:row-start-2">
+              <FeatureList items={rightFeatures} />
             </div>
           </div>
         </div>
@@ -148,14 +99,11 @@ const LynPricingSection = () => {
   );
 };
 
-function GradientDot() {
+function PlanDot() {
   return (
     <span
-      className="mt-2 h-3 w-3 shrink-0 rounded-full shadow-[inset_1px_1px_1px_rgba(255,255,255,0.25),inset_0_-3px_2px_rgba(255,255,255,0.12)]"
-      style={{
-        background:
-          "linear-gradient(91deg, var(--color-lyn-accent-from), var(--color-lyn-accent-to))",
-      }}
+      aria-hidden
+      className="lyn-pricing-feature-dot mt-2 h-3 w-3 shrink-0 rounded-full"
     />
   );
 }

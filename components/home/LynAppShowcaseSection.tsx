@@ -6,7 +6,6 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import Container from "@/components/Container";
-import { LynAppShowcaseGallery } from "@/components/home/LynAppShowcaseGallery";
 import { LynAppShowcaseTabs } from "@/components/home/LynAppShowcaseTabs";
 import { LynStepFeatureRow } from "@/components/home/LynStepFeatureRow";
 import {
@@ -165,8 +164,6 @@ const LynAppShowcaseSection = () => {
             </div>
           </div>
         </div>
-
-        <LynAppShowcaseGallery />
       </Container>
     </section>
   );

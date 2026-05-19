@@ -492,6 +492,28 @@
       "downloadApp": "Descargar"
     },
     "ctaLogin": "Iniciar sesión",
-    "ctaStart": "Empezar ahora"
+    "ctaStart": "Empezar ahora",
+    "talkToSales": "Hablar con ventas",
+    "pricing": {
+      "title": "Elige el plan ideal",
+      "titleAccent": "para tu negocio.",
+      "aside": "Empieza en minutos y automatiza atención, citas y cobros en WhatsApp.",
+      "perMonth": "/mes",
+      "subscribe": "Suscribirse ahora",
+      "autonomousPlan": "Plan Autónomo",
+      "autonomousFor": "Para 1 profesional",
+      "leftFeatures": [
+        "**Citas** ilimitadas",
+        "**Integración** con calendario",
+        "**Gestión** de clientes en tiempo real",
+        "**Campañas** de reactivación"
+      ],
+      "rightFeatures": [
+        "**Atención automatizada** por WhatsApp con IA.",
+        "**Soluciones inteligentes** según tu negocio.",
+        "**Recordatorios** automáticos",
+        "**Informes** y métricas"
+      ]
+    }
   }
 }

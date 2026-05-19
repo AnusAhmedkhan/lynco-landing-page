@@ -45,12 +45,12 @@ export function useLynFaqItems() {
   );
 }
 
-export function useLynPricingFeatures(plan: "autonomous" | "multi") {
+export function useLynPricingFeatures(column: "left" | "right") {
   const { t } = useTranslation();
   const key =
-    plan === "autonomous"
-      ? "lynLanding.pricing.autonomousFeatures"
-      : "lynLanding.pricing.multiFeatures";
+    column === "left"
+      ? "lynLanding.pricing.leftFeatures"
+      : "lynLanding.pricing.rightFeatures";
   return useMemo(
     () => asArray<string>(t(key, { returnObjects: true })),
     [t, key]

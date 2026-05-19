@@ -188,6 +188,27 @@
     animation-play-state: paused;
   }
 
+  @keyframes lyn-metric-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(calc(-1 * var(--lyn-float-travel, 12px)));
+    }
+  }
+
+  .lyn-metric-float {
+    animation: lyn-metric-float var(--lyn-float-duration, 2.6s) ease-in-out
+      infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lyn-metric-float {
+      animation: none;
+    }
+  }
+
   /* Pricing Card Gradient */
   .pricing-card-gradient {
     background: linear-gradient(
@@ -198,14 +219,17 @@
   }
 
   .lyn-gradient-text {
-    background: linear-gradient(
-      102deg,
-      var(--color-lyn-accent-from),
-      var(--color-lyn-accent-to)
-    );
+    background: linear-gradient(91.38deg, #2e49b8 -2.18%, #6787e4 118.65%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .lyn-pricing-feature-dot {
+    background: linear-gradient(91.38deg, #2e49b8 -2.18%, #6787e4 118.65%);
+    box-shadow:
+      inset 1px 1px 1px rgba(255, 255, 255, 0.25),
+      inset 0 -3px 2px rgba(255, 255, 255, 0.12);
   }
 
   .lyn-btn-primary {
@@ -226,6 +250,20 @@
 
   .lyn-plan-card-multi {
     background: linear-gradient(145deg, #12192b 0%, #172345 48%, #151a32 100%);
+  }
+
+  .lyn-section-plan-bg {
+    background-color: var(--color-lyn-bg);
+    background-image: url("/assets/newPlanBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: 1024px) {
+    .lyn-section-plan-bg {
+      background-size: 100% 100%;
+    }
   }
 
   /* Shared glass (Figma #FFFFFF1A) */

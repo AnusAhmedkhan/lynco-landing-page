@@ -664,6 +664,18 @@
       "multiPlan": "Multiprofessional Plan",
       "multiFor": "For up to 20 professionals",
       "mostPopular": "Most Popular",
+      "leftFeatures": [
+        "Unlimited **appointments**",
+        "**Integration** with calendar",
+        "Real-time customer **management**",
+        "Reactivation **campaigns**"
+      ],
+      "rightFeatures": [
+        "**Automated customer service** via WhatsApp powered by AI.",
+        "**Intelligent solutions** based on your business.",
+        "Automatic **reminders**",
+        "**Reports** and metrics"
+      ],
       "autonomousFeatures": [
         "**Automated customer service** via WhatsApp powered by AI.",
         "Unlimited **appointments**",

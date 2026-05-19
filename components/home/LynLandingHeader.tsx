@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion, useReducedMotion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import Container from "@/components/Container";
@@ -11,15 +12,34 @@ import MobileNavDrawer from "@/components/navigation/MobileNavDrawer";
 import { GUIDE_NAV_ITEMS } from "@/constants/guides-nav";
 import { LYN_NAV } from "@/constants/lyn-landing-content";
 import { APP_ROUTES } from "@/constants/routes";
+import { useLynLandingReady } from "@/context/LynLandingAnimationContext";
 import { lynLandingAssets } from "@/lib/lyn-landing-assets";
 
 const LynLandingHeader = () => {
   const { t } = useTranslation();
+  const landingReady = useLynLandingReady();
+  const reduceMotion = useReducedMotion();
 
   return (
-    <header className="bg-lyn-bg sticky top-0 z-50 border-b border-lyn-border/40">
+    <motion.header
+      className="bg-lyn-bg sticky top-0 z-50 border-b border-lyn-border/40"
+      initial={reduceMotion ? false : { x: "-100%", opacity: 0 }}
+      animate={
+        landingReady
+          ? { x: 0, opacity: 1 }
+          : reduceMotion
+            ? { x: 0, opacity: 1 }
+            : { x: "-100%", opacity: 0 }
+      }
+      transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
+    >
       <Container size="xl" className="py-4">
-        <div className="relative flex items-center justify-between gap-4">
+        <motion.div
+          className="relative flex items-center justify-between gap-4"
+          initial={reduceMotion ? false : { opacity: 0 }}
+          animate={landingReady ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+        >
           <Link
             href="/home"
             className="relative z-10 flex shrink-0 items-center"
@@ -46,7 +66,12 @@ const LynLandingHeader = () => {
             <GuidesNavDropdown />
           </nav>
 
-          <div className="relative z-10 ml-auto flex items-center gap-3">
+          <motion.div
+            className="relative z-10 ml-auto flex items-center gap-3"
+            initial={reduceMotion ? false : { x: 24, opacity: 0 }}
+            animate={landingReady ? { x: 0, opacity: 1 } : { x: 24, opacity: 0 }}
+            transition={{ duration: 0.5, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
+          >
             <Link
               href={APP_ROUTES.SIGNIN}
               className="lyn-login-text hidden text-[13px] font-medium lg:inline"
@@ -73,10 +98,10 @@ const LynLandingHeader = () => {
                 }}
               />
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </Container>
-    </header>
+    </motion.header>
   );
 };
 
