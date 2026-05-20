@@ -1,55 +1,92 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
-export function LynAppShowcaseGallery() {
+import Container from "@/components/Container";
+import { LynGlassCard } from "@/components/home/LynGlassCard";
+import { APP_ROUTES } from "@/constants/routes";
+import { useLynGalleryCards } from "@/hooks/use-lyn-landing";
+
+function FeatureDot() {
   return (
-    <div className="mt-8 grid gap-4 lg:mt-10 lg:grid-cols-[1.75fr_1fr] lg:gap-8">
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
-        <div className="border-lyn-border relative aspect-[4/3] overflow-hidden rounded-[32px] border sm:aspect-auto sm:min-h-[160px] lg:min-h-[346px]">
-          <Image
-            src="/assets/gallery1.png"
-            alt="App dashboard overview"
-            fill
-            className="object-cover"
-            sizes="(max-width:1024px) 100vw, 40vw"
-          />
-          <div className="pointer-events-none absolute left-0 flex items-center justify-center overflow-hidden">
-            <Image
-              src="/assets/reactagle.png"
-              alt=""
-              width={180}
-              height={200}
-              // className="h-[85%] w-auto max-w-none rotate-[85deg] object-contain opacity-95"
-            />
-          </div>
-        </div>
-        <GalleryTile src="/assets/gallery2.png" alt="App clients view" />
-        <GalleryTile src="/assets/gallery3.png" alt="App calendar view" />
-      </div>
-      <div className="border-lyn-border relative min-h-[220px] overflow-hidden rounded-[32px] border sm:min-h-[280px] lg:min-h-[346px]">
-        <Image
-          src="/assets/gallery4.png"
-          alt="Lynco on mobile"
-          fill
-          className="object-cover object-center"
-          sizes="(max-width:1024px) 100vw, 35vw"
-        />
-      </div>
-    </div>
+    <span
+      aria-hidden
+      className="lyn-pricing-feature-dot mt-2 h-3 w-3 shrink-0 rounded-full"
+    />
   );
 }
 
-function GalleryTile({ src, alt }: { src: string; alt: string }) {
+export function LynAppShowcaseGallery() {
+  const { t } = useTranslation();
+  const cards = useLynGalleryCards();
+
   return (
-    <div className="border-lyn-border relative aspect-[4/3] overflow-hidden rounded-[32px] border sm:aspect-auto sm:min-h-[160px] lg:min-h-[346px]">
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        className="object-cover"
-        sizes="(max-width:1024px) 100vw, 40vw"
-      />
-    </div>
+    <section className="bg-lyn-bg py-16 md:py-24">
+      <Container size="xl">
+        <div className=" relative rounded-[28px] sm:rounded-[32px] lg:rounded-[40px]">
+          <div
+            className="lyn-section-plan-bg absolute inset-0 rounded-[inherit]"
+            aria-hidden
+          />
+
+          <div className="relative z-10 flex flex-col gap-8 p-6 sm:gap-10 sm:p-8 lg:gap-12 lg:p-10 xl:p-12">
+            <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
+              <div className="max-w-2xl">
+                <Image
+                  src="/assets/logo.svg"
+                  alt="Lynco"
+                  width={122}
+                  height={25}
+                  className="h-6 w-auto sm:h-7"
+                />
+                <h2 className="text-white mt-6 text-2xl font-bold leading-tight sm:text-3xl md:text-[2rem] md:leading-snug lg:mt-8">
+                  {t("lynLanding.gallery.heading")}
+                </h2>
+                <p className="text-lyn-muted mt-4 text-base sm:text-lg">
+                  {t("lynLanding.gallery.subline1")}
+                </p>
+                <p className="text-lyn-muted mt-1 text-base sm:text-lg">
+                  {t("lynLanding.gallery.subline2")}
+                </p>
+              </div>
+
+              <Link
+                href={APP_ROUTES.SIGNUP}
+                className="lyn-btn-subscribe w-full shrink-0 rounded-xl px-6 py-3.5 text-center text-base font-semibold text-white sm:w-auto sm:px-8 lg:self-center"
+              >
+                {t("lynLanding.gallery.cta")}
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+              {cards.map((card) => (
+                <LynGlassCard
+                  key={card.title}
+                  className="flex h-full flex-col p-5 sm:p-6"
+                >
+                  <h3 className="text-white text-lg font-bold sm:text-xl">
+                    {card.title}
+                  </h3>
+                  <ul className="text-white mt-4 space-y-3 sm:mt-5 sm:space-y-3.5">
+                    {card.features.map((feature) => (
+                      <li key={feature.title} className="flex gap-3">
+                        <FeatureDot />
+                        <span className="text-sm leading-relaxed sm:text-base">
+                          <strong className="font-bold">{feature.title}</strong>
+                          {": "}
+                          {feature.body}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </LynGlassCard>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
   );
 }

@@ -1,11 +1,9 @@
 "use client";
 
 import { AnimatePresence } from "framer-motion";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 
-import LynSplashScreen, {
-  hasSeenLynSplash,
-} from "@/components/home/LynSplashScreen";
+import LynSplashScreen from "@/components/home/LynSplashScreen";
 import { LynLandingAnimationContext } from "@/context/LynLandingAnimationContext";
 
 export default function LynLandingShell({
@@ -14,15 +12,7 @@ export default function LynLandingShell({
   children: React.ReactNode;
 }) {
   const [landingReady, setLandingReady] = useState(false);
-  const [showSplash, setShowSplash] = useState(false);
-
-  useEffect(() => {
-    if (hasSeenLynSplash()) {
-      setLandingReady(true);
-    } else {
-      setShowSplash(true);
-    }
-  }, []);
+  const [showSplash, setShowSplash] = useState(true);
 
   const handleSplashComplete = useCallback(() => {
     setShowSplash(false);

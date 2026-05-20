@@ -3,6 +3,7 @@
 import { Manrope } from "next/font/google";
 
 import LynLandingFooter from "@/components/home/LynLandingFooter";
+import { LynLandingHashScroll } from "@/components/home/LynLandingHashScroll";
 import LynLandingHeader from "@/components/home/LynLandingHeader";
 import LynLandingShell from "@/components/home/LynLandingShell";
 
@@ -19,6 +20,7 @@ export default function LandingLayout({
   return (
     <LynLandingShell>
       <div className={`${manrope.className} bg-lyn-bg text-white antialiased`}>
+        <LynLandingHashScroll />
         <LynLandingHeader />
         <main className="relative">{children}</main>
         <LynLandingFooter />

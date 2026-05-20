@@ -25,7 +25,8 @@ export function LynPlanBadge({
     <span
       className={cn(
         "inline-flex w-fit max-w-full rounded-full p-px",
-        "bg-[linear-gradient(207.94deg,rgba(255,255,255,0.5)_8.93%,rgba(255,255,255,0)_69.85%)]",
+        // "bg-[linear-gradient(207.94deg,rgba(255,255,255,0.5)_8.93%,rgba(255,255,255,0)_69.85%)]",
+        "lyn-glass-card",
         className
       )}
     >

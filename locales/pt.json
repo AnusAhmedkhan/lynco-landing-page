@@ -525,6 +525,44 @@
       "title": "Do primeiro contato ao pagamento.",
       "titleAccent": "Tudo é automático.",
       "whatsappAlt": "Automação no WhatsApp",
+      "chat": {
+        "paymentLink": "https://api.pagar.me/checkout/v1/orders/chk_n9Kp1xfmNcy98Y",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Oi, preciso de um agendamento",
+            "completeStep": 1
+          },
+          {
+            "role": "bot",
+            "text": "Claro! Qual serviço você gostaria de agendar?",
+            "completeStep": 2
+          },
+          { "role": "user", "text": "Corte de cabelo" },
+          { "role": "bot", "text": "Ótimo! Quando você gostaria de vir?" },
+          { "role": "user", "text": "Amanhã à tarde" },
+          {
+            "role": "bot",
+            "text": "Temos 13h30, 14h15 e 15h disponíveis."
+          },
+          { "role": "user", "text": "14h15" },
+          { "role": "bot", "text": "Perfeito! Posso confirmar?" },
+          { "role": "user", "text": "sim, por favor" },
+          { "role": "bot", "text": "Pode me informar seu nome?" },
+          { "role": "user", "text": "John Nick" },
+          {
+            "role": "bot",
+            "text": "Perfeito, John! Seu agendamento em 2026-05-20 das 14:15 às 15:00 está reservado.",
+            "completeStep": 3
+          },
+          {
+            "role": "bot",
+            "text": "Para confirmar, conclua o pagamento aqui:",
+            "linkKey": "paymentLink",
+            "completeStep": 4
+          }
+        ]
+      },
       "steps": [
         {
           "title": "Cliente envia mensagem",
@@ -537,13 +575,13 @@
           "stepNumber": "02"
         },
         {
-          "title": "Pagamento confirmado",
-          "body": "Quando necessário, envia links de pagamento e confirma o agendamento automaticamente.",
+          "title": "Agendamento confirmado",
+          "body": "O cliente escolhe e confirma o horário.",
           "stepNumber": "03"
         },
         {
-          "title": "Agendamento confirmado",
-          "body": "O compromisso é confirmado e sincronizado na sua agenda sem trabalho manual.",
+          "title": "Pagamento e lembretes",
+          "body": "Quando necessário, envia automaticamente o link de pagamento e lembretes.",
           "stepNumber": "04"
         }
       ]
@@ -572,86 +610,182 @@
       "googlePlayAlt": "Disponível no Google Play",
       "tabs": {
         "calendar": {
-          "label": "Agenda",
-          "eyebrow": "Controle total",
+          "label": "Calendário",
+          "eyebrow": "Calendário",
           "title": "Tudo organizado, em tempo real.",
-          "description": "Acompanhe agendamentos, clientes e pagamentos direto no app.",
+          "description": "Acompanhe agendamentos, disponibilidade e horários dos clientes diretamente pelo aplicativo.",
           "features": [
             {
               "title": "Agenda organizada",
-              "body": "Veja horários confirmados, reagendamentos e disponibilidade em tempo real."
+              "body": "Visualize agendamentos confirmados, remarcações e disponibilidade em tempo real em um só lugar."
             },
             {
-              "title": "Visão do dia",
-              "body": "Veja os compromissos e status do dia de forma rápida."
+              "title": "Gestão fácil de agendamentos",
+              "body": "Gerencie reservas com eficiência e mantenha sua rotina totalmente organizada."
             },
             {
-              "title": "Notificações instantâneas",
-              "body": "Receba alertas quando clientes agendam, pagam ou reagendam."
+              "title": "Atualizações e lembretes instantâneos",
+              "body": "Receba notificações em tempo real sobre novos agendamentos, alterações e atividades dos clientes."
             }
           ]
         },
         "ai": {
           "label": "IA",
-          "eyebrow": "Assistente inteligente",
-          "title": "Seu WhatsApp trabalha enquanto você dorme.",
-          "description": "A IA responde, qualifica leads e agenda automaticamente.",
+          "eyebrow": "Assistente de IA",
+          "title": "Conversas inteligentes, automatizadas instantaneamente.",
+          "description": "Deixe a IA da Lynco cuidar dos agendamentos, responder clientes e enviar links de pagamento automaticamente pelo WhatsApp.",
           "features": [
             {
-              "title": "Respostas 24/7",
-              "body": "Responda perguntas comuns instantaneamente no WhatsApp."
+              "title": "Conversas humanizadas",
+              "body": "Os clientes interagem com uma IA que responde de forma natural e profissional em tempo real."
             },
             {
-              "title": "Qualificação de leads",
-              "body": "Colete os dados certos antes de passar para sua equipe."
+              "title": "Agendamento automático",
+              "body": "A IA verifica a disponibilidade, sugere horários e confirma agendamentos sem esforço manual."
             },
             {
-              "title": "Transferência quando precisar",
-              "body": "Encaminhe para um humano com todo o contexto da conversa."
+              "title": "Links de pagamento integrados",
+              "body": "Envie links de pagamento diretamente na conversa para confirmar agendamentos mais rápido e reduzir faltas."
             }
           ]
         },
         "payments": {
           "label": "Pagamentos",
-          "eyebrow": "Receba mais rápido",
-          "title": "Pagamentos sincronizados com cada agendamento.",
-          "description": "Envie links, confirme status e concilie sem planilhas.",
+          "eyebrow": "Pagamentos",
+          "title": "Acompanhe todos os pagamentos em um só lugar.",
+          "description": "Tenha controle total sobre pagamentos dos clientes, desempenho financeiro e status das transações diretamente pelo aplicativo.",
           "features": [
             {
-              "title": "Links de pagamento",
-              "body": "Cobre clientes no chat com um toque."
+              "title": "Métricas e insights de receita",
+              "body": "Monitore ganhos totais, receita mensal e desempenho dos pagamentos com análises em tempo real."
             },
             {
-              "title": "Acompanhamento de status",
-              "body": "Veja pagos, pendentes e falhos em um só lugar."
+              "title": "Controle de pagamentos",
+              "body": "Visualize todos os pagamentos dos clientes, transações de agendamentos e seus status instantaneamente."
             },
             {
-              "title": "Integração com POS",
-              "body": "Conecte pagamentos presenciais ao mesmo painel."
+              "title": "Gestão financeira organizada",
+              "body": "Mantenha o histórico de pagamentos, transações online e registros em dinheiro centralizados e fáceis de gerenciar."
             }
           ]
         },
         "marketing": {
           "label": "Marketing",
-          "eyebrow": "Cresça no automático",
-          "title": "Campanhas que enchem sua agenda.",
-          "description": "Alcance clientes com ofertas e lembretes que geram reservas.",
+          "eyebrow": "Marketing",
+          "title": "Crie e gerencie campanhas de marketing no WhatsApp.",
+          "description": "Alcance clientes com descontos direcionados. Todas as campanhas são verificadas pela Meta para entrega segura aos seus clientes.",
           "features": [
             {
-              "title": "Criador de campanhas",
-              "body": "Lance promoções para segmentos em poucos cliques."
+              "title": "Campanhas com desconto",
+              "body": "Crie campanhas promocionais com ofertas de desconto flexíveis personalizadas para seus clientes."
             },
             {
-              "title": "Reengajamento",
-              "body": "Recupere clientes inativos com mensagens programadas."
+              "title": "Agendamento de campanhas",
+              "body": "Agende campanhas para serem enviadas nos melhores horários ou envie imediatamente para atingir clientes quando estão mais engajados."
             },
             {
-              "title": "Visão de desempenho",
-              "body": "Acompanhe aberturas, respostas e agendamentos por campanha."
+              "title": "Entrega verificada pela Meta",
+              "body": "Todas as campanhas são verificadas e aprovadas pela Meta para entrega confiável e em conformidade com sua base de clientes."
+            },
+            {
+              "title": "Análises detalhadas",
+              "body": "Acompanhe o desempenho da campanha com métricas de custo, contagem de entregas e engajamento para otimizar campanhas futuras."
             }
           ]
         }
       }
+    },
+    "onboard": {
+      "title": "Integração fácil",
+      "subline1": "Começar leva menos de 5 minutos.",
+      "subline2": "Basta enviar uma foto dos seus serviços e a Lynco cuida do resto.",
+      "videoPlaceholderAria": "Vídeo em breve",
+      "steps": [
+        {
+          "title": "Confirmar dados do negócio",
+          "body": "Já buscamos suas informações. Revise e atualize se necessário.",
+          "stepNumber": "1"
+        },
+        {
+          "title": "Adicionar serviços",
+          "body": "Gerencie os serviços que seu negócio oferece",
+          "stepNumber": "2"
+        },
+        {
+          "title": "Conectar WhatsApp Business",
+          "body": "Vincule seu número do WhatsApp para clientes agendarem pelo chat.",
+          "stepNumber": "3"
+        },
+        {
+          "title": "Conectar gateway de pagamento",
+          "body": "Receba pagamentos dos seus clientes com segurança.",
+          "stepNumber": "4"
+        },
+        {
+          "title": "Preferências de IA",
+          "body": "Configure como a IA deve se comportar e o tempo de resposta nos chats.",
+          "stepNumber": "5"
+        }
+      ]
+    },
+    "gallery": {
+      "heading": "Pronto para colocar seu negócio no piloto automático?",
+      "subline1": "Começar leva menos de 5 minutos.",
+      "subline2": "Basta enviar uma foto dos seus serviços e a Lynco cuida do resto.",
+      "cta": "Impulsionar meu negócio",
+      "cards": [
+        {
+          "title": "Controle de IA humanizado",
+          "features": [
+            {
+              "title": "Modo de coexistência Meta",
+              "body": "Use seu celular enquanto a IA responde ao vivo."
+            },
+            {
+              "title": "Sempre aprendendo",
+              "body": "Fica mais inteligente a cada cliente."
+            },
+            {
+              "title": "Ritmo natural",
+              "body": "Você controla o atraso para parecer humano."
+            },
+            {
+              "title": "Pausa inteligente",
+              "body": "A IA para instantaneamente quando você entra."
+            }
+          ]
+        },
+        {
+          "title": "Fluxo de caixa contínuo",
+          "features": [
+            {
+              "title": "Pagamentos antecipados",
+              "body": "O dinheiro vai direto para sua conta bancária."
+            },
+            {
+              "title": "Zero faltas",
+              "body": "Lembretes automáticos garantem os agendamentos."
+            },
+            {
+              "title": "Alertas instantâneos",
+              "body": "Saiba no segundo em que for agendado ou pago."
+            }
+          ]
+        },
+        {
+          "title": "Crescimento sem esforço",
+          "features": [
+            {
+              "title": "Marketing no app",
+              "body": "Execute campanhas diretamente dentro da Lynco."
+            },
+            {
+              "title": "Histórico do cliente",
+              "body": "Gerencie todos os agendamentos passados em uma aba."
+            }
+          ]
+        }
+      ]
     },
     "pricing": {
       "title": "Escolha o plano ideal",

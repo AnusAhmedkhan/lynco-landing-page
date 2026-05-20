@@ -4,18 +4,8 @@ import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const SPLASH_SEEN_KEY = "lyn-splash-seen";
 const SPLASH_VIDEO = "/assets/splash.mp4";
 const EXIT_MS = 420;
-
-export function hasSeenLynSplash(): boolean {
-  if (typeof window === "undefined") return true;
-  return sessionStorage.getItem(SPLASH_SEEN_KEY) === "1";
-}
-
-export function markLynSplashSeen(): void {
-  // sessionStorage.setItem(SPLASH_SEEN_KEY, "1");
-}
 
 type LynSplashScreenProps = {
   onComplete: () => void;
@@ -30,7 +20,6 @@ export default function LynSplashScreen({ onComplete }: LynSplashScreenProps) {
   const finish = useCallback(() => {
     if (finishedRef.current) return;
     finishedRef.current = true;
-    markLynSplashSeen();
     onComplete();
   }, [onComplete]);
 

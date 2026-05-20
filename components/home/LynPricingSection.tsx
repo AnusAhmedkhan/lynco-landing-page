@@ -56,7 +56,7 @@ const LynPricingSection = () => {
           </p>
         </div>
 
-        <div className="border-lyn-card-border relative mt-12 overflow-hidden rounded-[28px] border sm:rounded-[32px] lg:rounded-[40px]">
+        <div className=" relative mt-12 overflow-hidden ">
           <div className="lyn-section-plan-bg absolute inset-0" aria-hidden />
           <div className="relative z-10 grid grid-cols-1 gap-6 p-6 sm:p-8 lg:grid-cols-[minmax(0,42%)_minmax(0,58%)] lg:grid-rows-[auto_1fr] lg:items-start lg:gap-x-10 lg:gap-y-8 lg:p-10 xl:gap-x-14 xl:p-12">
             <div className="order-1 flex flex-col lg:col-start-1 lg:row-start-1">

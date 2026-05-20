@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 
 import {
-  useLynAppShowcaseTabs,
   type LynAppShowcaseTabId,
+  useLynAppShowcaseTabs,
 } from "@/hooks/use-lyn-landing";
 import { cn } from "@/lib/utils";
 
@@ -22,7 +22,7 @@ export function LynAppShowcaseTabs({
       <div
         role="tablist"
         aria-label="App features"
-        className="lyn-showcase-tab-track lyn-glass relative h-[58px] w-full max-w-[548px] overflow-hidden rounded-[35px] sm:h-[71px]"
+        className="lyn-showcase-tab-track lyn-glass relative h-[58px] w-full max-w-[548px] overflow-hidden !rounded-[45px] sm:h-[71px]"
       >
         <div className="absolute inset-0 flex items-center justify-center px-[5%] sm:px-[38px]">
           <div className="relative grid h-[30px] w-full max-w-[457px] grid-cols-4 sm:h-[35px]">

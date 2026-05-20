@@ -49,6 +49,7 @@ function LynHeroPhone({
           alt=""
           width={499}
           height={1024}
+          priority
           className="pointer-events-none absolute inset-0 z-10 h-full w-full object-contain"
           sizes="(max-width:599px) 88vw, (max-width:768px) 90vw, 42vw"
         />
@@ -65,10 +66,10 @@ const LynHeroSection = () => {
   return (
     <section
       id="how-it-works"
-      className="bg-lyn-bg relative flex flex-col overflow-x-hidden pb-6 pt-6 max-[599px]:min-h-0 min-[600px]:min-h-[100svh] min-[600px]:pb-0 min-[600px]:pt-8 md:min-h-[min(100dvh,960px)] md:pt-12"
+      className="bg-lyn-bg relative flex flex-col overflow-x-hidden pb-6 pt-6  min-[600px]:min-h-[750px] min-[600px]:pb-0 min-[600px]:pt-8 lg:min-h-[min(100dvh,960px)] md:pt-12"
     >
       <motion.div
-        className="pointer-events-none absolute bottom-[6%] left-1/2 top-[18%] hidden w-[min(58vw,400px)] -translate-x-1/2 opacity-75 mix-blend-screen min-[600px]:block min-[1000px]:bottom-0 min-[1000px]:top-[4%] min-[1000px]:w-[min(1240px,100vw)] min-[1000px]:max-w-[1500px] min-[1000px]:opacity-100"
+        className="pointer-events-none absolute bottom-[6%] left-1/2 top-[18%] hidden w-[min(58vw,400px)] -translate-x-1/2 opacity-75 mix-blend-screen min-[900px]:block min-[1000px]:bottom-0 min-[1000px]:top-[4%] min-[1000px]:w-[min(1240px,100vw)] min-[1000px]:max-w-[1500px] min-[1000px]:opacity-100"
         initial={reduceMotion ? false : { opacity: 0, scale: 0.98 }}
         animate={
           landingReady ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.98 }

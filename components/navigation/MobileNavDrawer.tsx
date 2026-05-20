@@ -77,13 +77,13 @@ const MobileNavDrawer = ({
         className={cn(
           "w-[84%] border-r px-4 py-6 sm:max-w-sm",
           isLyn
-            ? "lyn-glass border-lyn-border !bg-lyn-bg text-white"
+            ? "border-lyn-border !bg-lyn-surface text-white"
             : "bg-white"
         )}
         aria-label={resolvedMenuLabel}
       >
         <SheetTitle className="sr-only">{resolvedMenuLabel}</SheetTitle>
-        <div className="flex flex-col gap-6">
+        <div className="relative z-10 flex flex-col gap-6">
           <div className="px-1">
             <Typography
               className={cn("font-bold", isLyn ? "text-white" : "text-primary")}

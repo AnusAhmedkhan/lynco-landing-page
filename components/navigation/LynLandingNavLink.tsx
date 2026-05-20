@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 import { isLandingHomePath, scrollToHash } from "@/lib/scroll-to-hash";
 import { cn } from "@/lib/utils";
@@ -20,6 +20,7 @@ export function LynLandingNavLink({
   onNavigate,
 }: LynLandingNavLinkProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const isHash = href.startsWith("#");
 
   if (isHash) {
@@ -29,8 +30,9 @@ export function LynLandingNavLink({
         onClick={() => {
           if (isLandingHomePath(pathname)) {
             scrollToHash(href);
+            window.history.pushState(null, "", `/home${href}`);
           } else {
-            window.location.assign(`/home${href}`);
+            router.push(`/home${href}`);
           }
           onNavigate?.();
         }}

@@ -8,7 +8,7 @@ import { HERO_METRIC_IMAGES } from "@/constants/hero-metric-assets";
 import { useLynLandingReady } from "@/context/LynLandingAnimationContext";
 import { cn } from "@/lib/utils";
 
-const METRIC_FLOAT_DURATION = 2.6;
+const METRIC_FLOAT_DURATION = 1.85;
 const METRIC_FLOAT_TRAVEL = 12;
 
 const METRIC_LAYOUT = [

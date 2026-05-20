@@ -525,6 +525,44 @@
       "title": "From initial contact to payment.",
       "titleAccent": "Everything is automatic.",
       "whatsappAlt": "WhatsApp automation",
+      "chat": {
+        "paymentLink": "https://api.pagar.me/checkout/v1/orders/chk_n9Kp1xfmNcy98Y",
+        "messages": [
+          {
+            "role": "user",
+            "text": "Hey, i need an appointment",
+            "completeStep": 1
+          },
+          {
+            "role": "bot",
+            "text": "Of course! Which service are you looking to book?",
+            "completeStep": 2
+          },
+          { "role": "user", "text": "Hair cutting" },
+          { "role": "bot", "text": "Great! When would you like to come in?" },
+          { "role": "user", "text": "Tomorrow afternoon" },
+          {
+            "role": "bot",
+            "text": "We have 13h30, 14h15, and 15h available."
+          },
+          { "role": "user", "text": "14h15" },
+          { "role": "bot", "text": "Perfect! Shall I confirm it?" },
+          { "role": "user", "text": "yes please" },
+          { "role": "bot", "text": "Could you share your name?" },
+          { "role": "user", "text": "John Nick" },
+          {
+            "role": "bot",
+            "text": "Perfect, John! Your appointment on 2026-05-20 at 14:15–15:00 is reserved.",
+            "completeStep": 3
+          },
+          {
+            "role": "bot",
+            "text": "To confirm, complete payment here:",
+            "linkKey": "paymentLink",
+            "completeStep": 4
+          }
+        ]
+      },
       "steps": [
         {
           "title": "Customer sends message",
@@ -537,13 +575,13 @@
           "stepNumber": "02"
         },
         {
-          "title": "Payment confirmed",
-          "body": "When needed, sends payment links and confirms booking automatically.",
+          "title": "Appointment confirmed",
+          "body": "The customer chooses and confirms the time.",
           "stepNumber": "03"
         },
         {
-          "title": "Appointment scheduled",
-          "body": "The appointment is confirmed and synced to your calendar without manual work.",
+          "title": "Payment and reminders",
+          "body": "When necessary, it automatically sends the payment link and reminders.",
           "stepNumber": "04"
         }
       ]
@@ -573,85 +611,181 @@
       "tabs": {
         "calendar": {
           "label": "Calendar",
-          "eyebrow": "Full control",
+          "eyebrow": "Calendar",
           "title": "Everything organized, in real time.",
-          "description": "Track appointments, clients, and payments directly through the app.",
+          "description": "Track appointments, availability, and customer schedules directly through the app.",
           "features": [
             {
               "title": "Organized schedule",
-              "body": "View confirmed times, reschedulings, and real-time availability."
+              "body": "View confirmed appointments, reschedulings, and real-time availability in one place."
             },
             {
-              "title": "Daily overview",
-              "body": "See today's appointments and status at a glance."
+              "title": "Easy appointment management",
+              "body": "Manage bookings efficiently and keep your daily schedule fully organized."
             },
             {
-              "title": "Instant notifications",
-              "body": "Get alerts when customers schedule, pay, or reschedule."
+              "title": "Instant updates & reminders",
+              "body": "Receive real-time notifications for new appointments, changes, and customer activity."
             }
           ]
         },
         "ai": {
           "label": "AI",
-          "eyebrow": "Smart assistant",
-          "title": "Your WhatsApp works while you sleep.",
-          "description": "AI replies, qualifies leads, and books appointments automatically.",
+          "eyebrow": "AI Assistant",
+          "title": "Smart conversations, automated instantly.",
+          "description": "Let Lynco's AI handle bookings, answer customer questions, and send payment requests naturally through WhatsApp.",
           "features": [
             {
-              "title": "24/7 responses",
-              "body": "Answer common questions instantly on WhatsApp."
+              "title": "Human-like conversations",
+              "body": "Customers interact with an AI assistant that responds naturally and professionally in real time."
             },
             {
-              "title": "Lead qualification",
-              "body": "Collect the right details before handing off to your team."
+              "title": "Automatic appointment scheduling",
+              "body": "The AI checks availability, suggests time slots, and confirms bookings without manual work."
             },
             {
-              "title": "Handoff when needed",
-              "body": "Escalate to a human with full conversation context."
+              "title": "Integrated payment requests",
+              "body": "Send payment links directly in the conversation to confirm appointments faster and reduce no-shows."
             }
           ]
         },
         "payments": {
           "label": "Payments",
-          "eyebrow": "Get paid faster",
-          "title": "Payments synced with every appointment.",
-          "description": "Send links, confirm status, and reconcile without spreadsheets.",
+          "eyebrow": "Payments",
+          "title": "Track every payment in one place.",
+          "description": "Get complete visibility of customer payments, revenue performance, and transaction status directly from the app.",
           "features": [
             {
-              "title": "Payment links",
-              "body": "Charge customers in chat with one tap."
+              "title": "Revenue insights & metrics",
+              "body": "Monitor total earnings, monthly revenue, and payment performance with real-time analytics."
             },
             {
-              "title": "Status tracking",
-              "body": "See paid, pending, and failed payments in one place."
+              "title": "Payment tracking",
+              "body": "View all customer payments, appointment transactions, and their current statuses instantly."
             },
             {
-              "title": "POS integration",
-              "body": "Connect in-person card payments to the same dashboard."
+              "title": "Organized financial management",
+              "body": "Keep payment history, online transactions, and cash records centralized and easy to manage."
             }
           ]
         },
         "marketing": {
           "label": "Marketing",
-          "eyebrow": "Grow on autopilot",
-          "title": "Campaigns that fill your calendar.",
-          "description": "Reach clients with offers and reminders that drive bookings.",
+          "eyebrow": "Marketing",
+          "title": "Create and manage WhatsApp marketing campaigns.",
+          "description": "Reach customers with targeted discounts. All campaigns are Meta verified for secure delivery to your customer base.",
           "features": [
             {
-              "title": "Campaign builder",
-              "body": "Launch promos to segments in a few clicks."
+              "title": "Discount campaigns",
+              "body": "Create promotional campaigns with flexible discount offers tailored to your customers."
             },
             {
-              "title": "Re-engagement",
-              "body": "Win back inactive clients with timed messages."
+              "title": "Campaign scheduling",
+              "body": "Schedule campaigns to send at optimal times or send immediately to reach customers when they're most engaged."
             },
             {
-              "title": "Performance view",
-              "body": "Track opens, replies, and bookings per campaign."
+              "title": "Meta verified delivery",
+              "body": "All campaigns are verified and approved by Meta for trusted, compliant delivery to your customer base."
+            },
+            {
+              "title": "Detailed analytics",
+              "body": "Track campaign performance with cost, delivery count, and engagement metrics to optimize future campaigns."
             }
           ]
         }
       }
+    },
+    "onboard": {
+      "title": "Onboard Easily",
+      "subline1": "Getting started takes less than 5 minutes.",
+      "subline2": "Just upload a photo of your services, and Lynco handles the rest.",
+      "videoPlaceholderAria": "Video coming soon",
+      "steps": [
+        {
+          "title": "Confirm Business Info",
+          "body": "We've pulled your details. Review & update if needed.",
+          "stepNumber": "1"
+        },
+        {
+          "title": "Add Services",
+          "body": "Manage the services your business offers",
+          "stepNumber": "2"
+        },
+        {
+          "title": "Connect WhatsApp Business",
+          "body": "Link your WhatsApp number to let clients book via chat.",
+          "stepNumber": "3"
+        },
+        {
+          "title": "Connect Payment Gateway",
+          "body": "Securely collect payments from your customers.",
+          "stepNumber": "4"
+        },
+        {
+          "title": "AI Preferences",
+          "body": "Set up how you want AI to behave and its response time to chats.",
+          "stepNumber": "5"
+        }
+      ]
+    },
+    "gallery": {
+      "heading": "Ready to Put Your Business on Autopilot?",
+      "subline1": "Getting started takes less than 5 minutes.",
+      "subline2": "Just upload a photo of your services, and Lynco handles the rest.",
+      "cta": "Supercharge My Business",
+      "cards": [
+        {
+          "title": "Human-Like AI Control",
+          "features": [
+            {
+              "title": "Meta Coexistence Mode",
+              "body": "Use your phone while the AI replies live."
+            },
+            {
+              "title": "Always Learning",
+              "body": "It gets smarter with every client."
+            },
+            {
+              "title": "Natural Pace",
+              "body": "You control the delay so it feels human."
+            },
+            {
+              "title": "Smart Pausing",
+              "body": "AI instantly stops when you step in."
+            }
+          ]
+        },
+        {
+          "title": "Seamless Cash Flow",
+          "features": [
+            {
+              "title": "Advance Payments",
+              "body": "Money goes straight to your bank account."
+            },
+            {
+              "title": "Zero No-Shows",
+              "body": "Automated reminders lock in bookings."
+            },
+            {
+              "title": "Instant Alerts",
+              "body": "Know the second you get booked or paid."
+            }
+          ]
+        },
+        {
+          "title": "Effortless Growth",
+          "features": [
+            {
+              "title": "In-App Marketing",
+              "body": "Run campaigns directly inside Lynco."
+            },
+            {
+              "title": "Customer History",
+              "body": "Manage every client's past bookings in one tab."
+            }
+          ]
+        }
+      ]
     },
     "pricing": {
       "title": "Choose the ideal",

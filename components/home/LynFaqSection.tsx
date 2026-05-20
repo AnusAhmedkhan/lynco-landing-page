@@ -1,6 +1,5 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -8,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import Container from "@/components/Container";
 import { useLynFaqItems } from "@/hooks/use-lyn-landing";
 import { lynLandingAssets } from "@/lib/lyn-landing-assets";
+import minusCircle from "@/public/assets/minusCircle.png";
+import plusCircle from "@/public/assets/plusCircle.png";
 
 const LynFaqSection = () => {
   const { t } = useTranslation();
@@ -35,7 +36,7 @@ const LynFaqSection = () => {
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-4xl space-y-6">
+        <div className=" mt-12  space-y-6">
           {faqItems.map((item, i) => {
             const isOpen = open === i;
             return (
@@ -49,30 +50,13 @@ const LynFaqSection = () => {
                   <span className="text-white text-xl font-medium tracking-tight md:text-3xl">
                     {item.q}
                   </span>
-                  <span className="relative mt-1 flex h-12 w-12 shrink-0 items-center justify-center">
-                    <Image
-                      src={
-                        isOpen
-                          ? lynLandingAssets.faqOpenBg
-                          : lynLandingAssets.faqClosedBg
-                      }
-                      alt=""
-                      width={48}
-                      height={48}
-                      className="absolute"
-                    />
-                    {isOpen ? (
-                      <ChevronDown className="text-white relative z-10 h-6 w-6 rotate-180" />
-                    ) : (
-                      <Image
-                        src={lynLandingAssets.faqClosedIcon}
-                        alt=""
-                        width={24}
-                        height={24}
-                        className="relative z-10"
-                      />
-                    )}
-                  </span>
+                  <Image
+                    src={isOpen ? minusCircle.src : plusCircle.src}
+                    alt=""
+                    width={48}
+                    height={48}
+                    className="mt-1 h-12 w-12 shrink-0"
+                  />
                 </button>
                 {isOpen ? (
                   <p className="text-lyn-muted mt-4 max-w-3xl text-lg leading-relaxed">

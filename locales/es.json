@@ -494,6 +494,98 @@
     "ctaLogin": "Iniciar sesión",
     "ctaStart": "Empezar ahora",
     "talkToSales": "Hablar con ventas",
+    "onboard": {
+      "title": "Integración sencilla",
+      "subline1": "Empezar toma menos de 5 minutos.",
+      "subline2": "Solo sube una foto de tus servicios y Lynco se encarga del resto.",
+      "videoPlaceholderAria": "Video próximamente",
+      "steps": [
+        {
+          "title": "Confirmar datos del negocio",
+          "body": "Ya obtuvimos tus datos. Revísalos y actualízalos si es necesario.",
+          "stepNumber": "1"
+        },
+        {
+          "title": "Agregar servicios",
+          "body": "Administra los servicios que ofrece tu negocio",
+          "stepNumber": "2"
+        },
+        {
+          "title": "Conectar WhatsApp Business",
+          "body": "Vincula tu número de WhatsApp para que los clientes reserven por chat.",
+          "stepNumber": "3"
+        },
+        {
+          "title": "Conectar pasarela de pago",
+          "body": "Cobra pagos de tus clientes de forma segura.",
+          "stepNumber": "4"
+        },
+        {
+          "title": "Preferencias de IA",
+          "body": "Configura cómo debe comportarse la IA y su tiempo de respuesta en los chats.",
+          "stepNumber": "5"
+        }
+      ]
+    },
+    "gallery": {
+      "heading": "¿Listo para poner tu negocio en piloto automático?",
+      "subline1": "Empezar toma menos de 5 minutos.",
+      "subline2": "Solo sube una foto de tus servicios y Lynco se encarga del resto.",
+      "cta": "Impulsar mi negocio",
+      "cards": [
+        {
+          "title": "Control de IA humano",
+          "features": [
+            {
+              "title": "Modo de coexistencia Meta",
+              "body": "Usa tu teléfono mientras la IA responde en vivo."
+            },
+            {
+              "title": "Siempre aprendiendo",
+              "body": "Se vuelve más inteligente con cada cliente."
+            },
+            {
+              "title": "Ritmo natural",
+              "body": "Controlas el retraso para que se sienta humano."
+            },
+            {
+              "title": "Pausa inteligente",
+              "body": "La IA se detiene al instante cuando intervienes."
+            }
+          ]
+        },
+        {
+          "title": "Flujo de caja fluido",
+          "features": [
+            {
+              "title": "Pagos anticipados",
+              "body": "El dinero va directo a tu cuenta bancaria."
+            },
+            {
+              "title": "Cero ausencias",
+              "body": "Los recordatorios automáticos aseguran las reservas."
+            },
+            {
+              "title": "Alertas instantáneas",
+              "body": "Entérate al segundo de cada reserva o pago."
+            }
+          ]
+        },
+        {
+          "title": "Crecimiento sin esfuerzo",
+          "features": [
+            {
+              "title": "Marketing en la app",
+              "body": "Ejecuta campañas directamente dentro de Lynco."
+            },
+            {
+              "title": "Historial del cliente",
+              "body": "Gestiona todas las reservas pasadas en una pestaña."
+            }
+          ]
+        }
+      ]
+    },
     "pricing": {
       "title": "Elige el plan ideal",
       "titleAccent": "para tu negocio.",

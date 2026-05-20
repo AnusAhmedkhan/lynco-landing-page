@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import Container from "@/components/Container";
-import { LynAppShowcaseTabs } from "@/components/home/LynAppShowcaseTabs";
+import { LynAppShowcasePhone } from "@/components/home/LynAppShowcasePhone";
 import { LynStepFeatureRow } from "@/components/home/LynStepFeatureRow";
 import {
   type LynAppShowcaseTabId,
@@ -17,6 +17,13 @@ import ChatBg from "@/public/assets/chatBg.png";
 import ChatBg2 from "@/public/assets/chatBg2.png";
 import checkIcon from "@/public/assets/check.png";
 import badgeGooglePlay from "@/public/assets/googlePlay.png";
+
+import { LynAppShowcaseTabs } from "./LynAppShowcaseTabs";
+
+const showcaseTransition = {
+  duration: 0.32,
+  ease: [0.22, 1, 0.36, 1] as const,
+};
 
 const LynAppShowcaseSection = () => {
   const { t } = useTranslation();
@@ -46,7 +53,7 @@ const LynAppShowcaseSection = () => {
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2 lg:gap-8">
-          <div className="border-lyn-border relative min-h-[480px] overflow-hidden rounded-[32px] border sm:min-h-[560px] lg:min-h-[739px]">
+          <div className="border-lyn-border relative min-h-[480px] overflow-hidden rounded-[32px] border">
             <div className="bg-lyn-surface absolute inset-0 -z-10" />
             <Image
               src={ChatBg2.src}
@@ -62,24 +69,11 @@ const LynAppShowcaseSection = () => {
               className="object-cover object-bottom opacity-70 mix-blend-screen"
               sizes="(max-width:1024px) 100vw,50vw"
             />
-            <div className="relative flex justify-center px-4 pb-[4.75rem] pt-10 sm:pb-[5.5rem] sm:pt-14">
-              <div className="relative aspect-[283/581] w-full max-w-[260px] sm:max-w-[283px]">
-                <Image
-                  src="/assets/calnderPhone.png"
-                  alt={t("lynLanding.showcase.phoneAlt")}
-                  fill
-                  className="object-cover"
-                  sizes="283px"
-                  priority
-                />
-                {/* <Image
-                  src="/assets/phoneFrame.png"
-                  alt=""
-                  fill
-                  className="pointer-events-none object-contain"
-                  sizes="283px"
-                /> */}
-              </div>
+            <div className="relative flex justify-center px-4 pb-[4.75rem] pt-10 sm:pb-[7.5rem] sm:pt-14">
+              <LynAppShowcasePhone
+                activeTabId={activeTabId}
+                alt={t("lynLanding.showcase.phoneAlt")}
+              />
             </div>
             <LynAppShowcaseTabs
               activeId={activeTabId}
@@ -93,7 +87,7 @@ const LynAppShowcaseSection = () => {
             />
           </div>
 
-          <div className="border-lyn-border relative flex min-h-[480px] flex-col justify-between overflow-hidden rounded-[32px] border p-6 md:min-h-[560px] md:p-8 lg:min-h-[739px]">
+          <div className="border-lyn-border relative flex min-h-[480px] flex-col justify-between overflow-hidden rounded-[32px] border p-6 md:min-h-[520px] md:p-8">
             <div className="bg-lyn-surface absolute inset-0 -z-10" />
             <Image
               src={ChatBg.src}
@@ -105,10 +99,10 @@ const LynAppShowcaseSection = () => {
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.22, ease: "easeOut" }}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -16 }}
+                transition={showcaseTransition}
                 className="relative z-10"
               >
                 <p className="text-lyn-secondary text-lg font-extrabold uppercase tracking-wide">
